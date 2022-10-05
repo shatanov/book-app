@@ -1,14 +1,14 @@
 # Book-app
-Каталог книг, с возможностью написания рецензий и отзывов на книгу.
+Сatalog of books, with the possibility of writing reviews and feedbacks of the books.
 
-## Дизайн
-[Шаблон проекта](https://www.figma.com/file/R3nOkgzVyqiHyA6BSBSsS1/Book-app?node-id=0%3A1)
+## Design
+[Template](https://www.figma.com/file/R3nOkgzVyqiHyA6BSBSsS1/Book-app?node-id=0%3A1)
 
-## Страницы
-- Страница регистрации
-- Страница входа в учетную запись
-- Главная страница
-- Страница с детальным представлением книги
-- Страница для написания рецензии
-- Страница для написания отзыва
+## Pages
+- SignUp Page
+- Login Page
+- Main Page
+- Detailed presentation of the book
+- Reviews Page
+- Feedbacks Page
 

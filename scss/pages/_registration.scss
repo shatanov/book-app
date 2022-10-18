@@ -2,7 +2,7 @@
   background-color: var(--white);
 }
 
-.main__wrapper {
+.main-wrapper {
   height: 100vh;
   max-width: 600px;
   display: flex;
@@ -12,12 +12,12 @@
 }
 
 @media (min-width: 600px) {
-  .main__wrapper {
+  .main-wrapper {
     padding: 0;
   }
 }
 
-.reg__wrapper {
+.main-wrapper__reg {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -36,11 +36,11 @@
     color: var(--primary);
   }
 
-  &:hover .logo__span{
+  &:hover .reg__logo--span{
     color: var(--dark-grey);
   }
 
-  .logo__span {
+  .reg__logo--span {
     color: var(--primary);
   }
 }

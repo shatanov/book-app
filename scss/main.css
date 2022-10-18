@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .main__wrapper {
@@ -26,20 +26,20 @@
   font-weight: 600;
   font-size: 36px;
   line-height: 54px;
-  color: #2E2E2E;
+  color: var(--dark-grey);
   text-align: center;
   margin-bottom: 30px;
   text-decoration: none;
   transition: color 0.3s;
 }
 .reg__logo:hover {
-  color: #6E49CB;
+  color: var(--primary);
 }
 .reg__logo:hover .logo__span {
-  color: #2E2E2E;
+  color: var(--dark-grey);
 }
 .reg__logo .logo__span {
-  color: #6E49CB;
+  color: var(--primary);
 }
 
 .reg__form {
@@ -59,7 +59,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #545356;
+  color: var(--grey);
   margin-bottom: 5px;
 }
 
@@ -67,38 +67,38 @@
   box-sizing: border-box;
   width: 100%;
   height: 60px;
-  background: #F5F5F8;
+  background: var(--bg);
   border: none;
   border-radius: 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #2E2E2E;
+  color: var(--dark-grey);
   padding: 15px 20px;
   margin-bottom: 20px;
 }
 .text-field::placeholder {
-  color: #A3ABAD;
+  color: var(--placeholder);
 }
 
 .form__btn {
   box-sizing: border-box;
   width: 100%;
   height: 60px;
-  background-color: #6E49CB;
+  background-color: var(--primary);
   border-radius: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   text-align: center;
   border: none;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
 }
 .form__btn:hover {
-  color: #6E49CB;
-  background-color: #fff;
-  border: 1px solid #6E49CB;
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
 }
 
 .reg__text {
@@ -109,7 +109,7 @@
   text-align: center;
 }
 .reg__text--link {
-  color: #6E49CB;
+  color: var(--primary);
   text-decoration: none;
 }
 .reg__text--link:hover {
@@ -118,6 +118,17 @@
 
 .wrapper {
   font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --dark-grey: #2E2E2E;
+  --bg: #F5F5F8;
+  --placeholder: #A3ABAD;
+  --primary: #6E49CB;
+  --light-primary: #ECE5FF;
+  --grey: #545356;
+  --contrast: #FC6D26;
+  --white: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

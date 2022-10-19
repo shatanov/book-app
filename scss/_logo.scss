@@ -1,0 +1,29 @@
+.logo {
+  font-weight: 600;
+  color: var(--dark-grey);
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &--large {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  &--smal {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &:hover {
+    color: var(--primary);
+  }
+
+  &:hover &__span {
+    color: var(--dark-grey);
+  }
+
+  &__span {
+    color: var(--primary);
+  }
+}

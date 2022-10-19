@@ -1,3 +1,5 @@
+
+
 .wrapper {
   background-color: var(--white);
 }
@@ -24,25 +26,8 @@
 }
 
 .reg__logo {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 54px;
-  color: var(--dark-grey);
-  text-align: center;
   margin-bottom: 30px;
-  text-decoration: none;
-  transition: color 0.3s;
-  &:hover {
-    color: var(--primary);
-  }
-
-  &:hover .reg__logo--span{
-    color: var(--dark-grey);
-  }
-
-  .reg__logo--span {
-    color: var(--primary);
-  }
+  text-align: center;
 }
 
 

@@ -1,8 +1,17 @@
 @import "logo";
 @import "pages/_registration";
+@import "pages/main-page";
 
 .wrapper {
   font-family: 'Poppins', sans-serif;
+
+  &__header {
+    margin-top: 30px;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
 
 :root {

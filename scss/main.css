@@ -9,7 +9,7 @@
   font-size: 36px;
   line-height: 54px;
 }
-.logo--smal {
+.logo--small {
   font-size: 28px;
   line-height: 42px;
 }
@@ -126,8 +126,124 @@
   text-decoration: underline;
 }
 
+.search {
+  display: inline-flex;
+  border-radius: 10px;
+  width: 100%;
+  background: var(--bg);
+}
+.search__input {
+  border-radius: 10px;
+  background: var(--bg);
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--dark-grey);
+  padding: 15px 20px;
+}
+.search__input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--placeholder);
+}
+.search__input:focus, .search__input:hover {
+  outline: none;
+}
+.search__icon {
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+  order: 1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  height: 60px;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__account {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__profile {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: right;
+  color: var(--primary);
+  margin-right: 5px;
+  text-decoration: none;
+}
+.account__link:hover {
+  text-decoration: underline;
+}
+.account__link:last-child {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.account__span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .search {
+    display: none;
+  }
+  .header__wrapper {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .spacer {
+    display: none;
+  }
+  .header__wrapper {
+    padding: 0;
+  }
+}
 .wrapper {
   font-family: "Poppins", sans-serif;
+}
+.wrapper__header {
+  margin-top: 30px;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
 
 :root {

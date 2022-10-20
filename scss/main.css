@@ -163,13 +163,44 @@
   cursor: pointer;
 }
 
+.profile-logo {
+  display: flex;
+  align-items: center;
+}
+.profile-logo__img {
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.profile-logo__img--hidden {
+  display: none;
+}
+.profile-logo__holder {
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-logo__holder--hidden {
+  display: none;
+}
+
 .header {
   height: 60px;
 }
 .header__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 .header__logo {
   flex: 1;
@@ -219,6 +250,30 @@
   color: #000000;
 }
 
+.profile__link {
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+}
+.profile__link:hover .profile-logo__holder {
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+}
+.profile__link:hover .profile__info {
+  color: var(--primary);
+}
+.profile__info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .search {
     display: none;
@@ -227,7 +282,7 @@
     padding: 0 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .spacer {
     display: none;
   }
@@ -235,11 +290,54 @@
     padding: 0;
   }
 }
+.set-books {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.set-books__info {
+  display: flex;
+}
+.set-books__title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--dark-grey);
+}
+.set-books__link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--primary);
+  text-decoration: none;
+}
+.set-books__link:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+}
+
 .wrapper {
   font-family: "Poppins", sans-serif;
 }
 .wrapper__header {
   margin-top: 30px;
+}
+.wrapper__main {
+  margin-top: 40px;
 }
 
 .spacer {

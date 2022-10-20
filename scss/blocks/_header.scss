@@ -1,0 +1,104 @@
+@import "../_mixins";
+@import "../blocks/search-input";
+@import "../blocks/profile-logo";
+.header {
+  height: 60px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__logo {
+    @include full-center;
+  }
+
+  &__search {
+    @include full-center;
+  }
+
+  &__account {
+    @include full-center;
+  }
+
+  &__profile {
+    @include full-center
+  }
+}
+
+.account {
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    color: var(--primary);
+    margin-right: 5px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+
+
+  &__span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+  }
+}
+
+.profile {
+
+  &__link{
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+
+    &:hover .profile-logo__holder {
+      color: var(--primary);
+      background-color: var(--white);
+      border: 1px solid var(--primary);
+    }
+
+    &:hover .profile__info {
+      color: var(--primary);
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .search {
+    display: none;
+  }
+
+  .header__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@include desktop {
+  .spacer {
+    display: none;
+  }
+  .header__wrapper {
+    padding: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.profile-logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    overflow: hidden;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    &--hidden {
+      display: none;
+    }
+  }
+  &__holder {
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}

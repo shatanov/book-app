@@ -1,0 +1,10 @@
+.book-img {
+  &--lg {
+    img {
+      object-fit: cover;
+      width: 140px;
+      height: 232px;
+      border-radius: 10px;
+    }
+  }
+}

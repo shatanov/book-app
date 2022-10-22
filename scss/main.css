@@ -23,47 +23,6 @@
   color: var(--primary);
 }
 
-.wrapper {
-  background-color: var(--white);
-}
-
-.main-wrapper {
-  height: 100vh;
-  max-width: 600px;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width: 600px) {
-  .main-wrapper {
-    padding: 0;
-  }
-}
-.main-wrapper__reg {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.reg__logo {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.reg__form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.form__inputs {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-
 .form-label {
   display: block;
   font-weight: 400;
@@ -85,7 +44,6 @@
   line-height: 27px;
   color: var(--dark-grey);
   padding: 15px 20px;
-  margin-bottom: 20px;
 }
 .text-field::placeholder {
   color: var(--placeholder);
@@ -111,18 +69,54 @@
   border: 1px solid var(--primary);
 }
 
-.reg__text {
+.main-registration {
+  height: 100vh;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+@media screen and (min-width: 767px) {
+  .registration {
+    padding: 0;
+  }
+}
+.registration__logo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.registration__inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.registration__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: #000000;
   text-align: center;
 }
-.reg__text--link {
+.registration__text--link {
   color: var(--primary);
   text-decoration: none;
 }
-.reg__text--link:hover {
+.registration__text--link:hover {
   text-decoration: underline;
 }
 
@@ -168,7 +162,7 @@
   align-items: center;
 }
 .profile-logo__img {
-  overflow: hidden;
+  object-fit: cover;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -203,26 +197,26 @@
   display: flex;
 }
 .header__logo {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 .header__search {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 .header__account {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 .header__profile {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
@@ -299,18 +293,19 @@
   display: flex;
 }
 .set-books__title {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+  margin: 0;
   color: var(--dark-grey);
 }
 .set-books__link {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   font-weight: 500;
@@ -332,6 +327,7 @@
 
 .wrapper {
   font-family: "Poppins", sans-serif;
+  background-color: var(--white);
 }
 .wrapper__header {
   margin-top: 30px;

@@ -1,0 +1,62 @@
+@import "score";
+@import "../mixins";
+
+.book {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  &__img {
+    img {
+      object-fit: cover;
+      width: 140px;
+      height: 232px;
+      border-radius: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-grey);
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--grey);
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+
+}
+
+@include mobile-s {
+  .book {
+    flex-wrap: nowrap;
+
+    &__name {
+      text-align: left;
+    }
+
+
+  }
+}

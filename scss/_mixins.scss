@@ -1,8 +1,14 @@
-@mixin full-center {
+@mixin full($position) {
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: $position, ;
+}
+
+@mixin mobile-s {
+  @media screen and (min-width: 464px) {
+    @content;
+  }
 }
 
 @mixin mobile {
@@ -16,3 +22,4 @@
     @content;
   }
 }
+

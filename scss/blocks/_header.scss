@@ -1,6 +1,8 @@
 @import "../_mixins";
 @import "../blocks/search-input";
 @import "../blocks/profile-logo";
+@import "../blocks/profile";
+
 .header {
   height: 60px;
 
@@ -9,19 +11,19 @@
   }
 
   &__logo {
-    @include full-center;
+    @include full(start);
   }
 
   &__search {
-    @include full-center;
+    @include full(center);
   }
 
   &__account {
-    @include full-center;
+    @include full(end);
   }
 
   &__profile {
-    @include full-center
+    @include full(end);
   }
 }
 
@@ -54,51 +56,16 @@
   }
 }
 
-.profile {
 
-  &__link{
-    text-decoration: none;
-    display: flex;
-    gap: 15px;
-
-    &:hover .profile-logo__holder {
-      color: var(--primary);
-      background-color: var(--white);
-      border: 1px solid var(--primary);
-    }
-
-    &:hover .profile__info {
-      color: var(--primary);
-    }
-  }
-
-  &__info {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    color: var(--dark-grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-}
 
 @include mobile {
   .search {
     display: none;
   }
-
-  .header__wrapper {
-    padding: 0 20px;
-  }
 }
 
 @include desktop {
-  .spacer {
+  .header__wrapper > .spacer {
     display: none;
-  }
-  .header__wrapper {
-    padding: 0;
   }
 }

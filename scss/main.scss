@@ -1,4 +1,5 @@
 @import "blocks/logo";
+@import "mixins";
 @import "pages/_registration";
 @import "pages/main-page";
 
@@ -8,15 +9,23 @@
 
   &__header {
     margin-top: 30px;
+    padding: 0 20px;
   }
 
   &__main {
     margin-top: 40px;
+    padding: 0 20px;
   }
 }
 
+
 .spacer {
   flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 :root {

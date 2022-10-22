@@ -1,0 +1,37 @@
+@import "../mixins";
+
+.profile {
+  &__link{
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+
+    &:hover .profile-logo__holder {
+      color: var(--primary);
+      background-color: var(--white);
+      border: 1px solid var(--primary);
+    }
+
+    &:hover .profile__info {
+      color: var(--primary);
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .profile__info {
+    font-size: 16px;
+    line-height: 1;
+  }
+}

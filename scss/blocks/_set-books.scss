@@ -1,16 +1,27 @@
 @import "../mixins";
+@import "book";
+@import "genres-block";
 
 .set-books {
+  &:last-child {
+    margin-bottom: 40px;
+  }
+
   display: flex;
   flex-direction: column;
   width: 100%;
 
+  &__genres {
+    margin-bottom: 30px;
+  }
+
   &__info {
     display: flex;
+    margin-bottom: 20px;
   }
 
   &__title {
-    @include full-center;
+    @include full(start);
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -19,7 +30,7 @@
   }
 
   &__link {
-    @include full-center;
+    @include full(end);
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -30,6 +41,29 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+// TODO При большом экране книги выстраиваются в 3 колонки, а дожны в 2, можно изменять значение колонок в media????
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+
+    @include mobile-s {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+}
+
+@include mobile {
+  .set-books {
+    &__title {
+      line-height: 1;
+    }
+
+    &__link {
+
+      line-height: 1;
     }
   }
 }

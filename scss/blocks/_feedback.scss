@@ -1,0 +1,45 @@
+.feedback {
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--placeholder);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--grey);
+
+    &--link {
+      color: var(--primary);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__score {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--primary);
+  }
+
+}

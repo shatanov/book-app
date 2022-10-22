@@ -7,4 +7,13 @@
       border-radius: 10px;
     }
   }
+
+  &--xl {
+    img {
+      object-fit: cover;
+      width: 253px;
+      height: 392px;
+      border-radius: 10px;
+    }
+  }
 }

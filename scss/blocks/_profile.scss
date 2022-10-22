@@ -17,6 +17,12 @@
     }
   }
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+
   &__info {
     font-weight: 400;
     font-size: 18px;
@@ -26,6 +32,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    &--sm {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__status {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--grey);
+
   }
 }
 

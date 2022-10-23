@@ -1,7 +1,7 @@
 .reviews {
 
   &__title {
-    margin: 0;
+    margin: 0; // Можно заменить одним    margin: 0 0 10px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 24px;
@@ -20,7 +20,7 @@
     line-height: 21px;
     text-align: center;
     color: var(--placeholder);
-    cursor: pointer;
+    cursor: pointer; // Можно вынести в класс типа clickable (да, по бэму название некорректное, если получится придумать что-то лучше, будет супер)
 
     &:hover {
       text-decoration: underline;

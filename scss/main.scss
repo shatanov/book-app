@@ -5,6 +5,7 @@
 @import "pages/detailed";
 @import "pages/review";
 
+// Лучше всё же вынести эти классы в новый файл, а этот файл будет содержать только импорты, что-то вроде точки входа получится
 .wrapper {
   font-family: 'Poppins', sans-serif;
   background-color: var(--white);

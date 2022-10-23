@@ -4,7 +4,7 @@
 
   .score__star {
     cursor: pointer;
-    & > .material-symbols-rounded {
+    & > .material-symbols-rounded { //"увеличение веса класса"
       color: #f8cf04;
       font-size: 36px;
       font-variation-settings: 'FILL' 0,
@@ -13,11 +13,11 @@
       'opsz' 48
     }
 
-    &:hover > .material-symbols-rounded {
+    &:hover > .material-symbols-rounded { //"увеличение веса класса"
       font-variation-settings: 'FILL' 1
     }
 
-    &--active > .material-symbols-rounded {
+    &--active > .material-symbols-rounded { //"увеличение веса класса"
       font-variation-settings: 'FILL' 1
     }
   }

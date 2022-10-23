@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,216 +13,240 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <!--  Search  -->
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--  Star  -->
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../scss/main.css">
 </head>
-<body class="wrapper">
-<header class="header wrapper__header">
-    <div class="container">
-        <div class="header__wrapper">
-            <div class="header__logo">
-                <a href="#" class="logo logo--small">Book<span class="logo__span">App</span></a>
-            </div>
-            <div class="header__search search">
-                <input type="text" class="search__input" placeholder="Search your books ">
-                <button class="search__icon" type="button">
-                    <span class="material-symbols-outlined">search</span>
-                </button>
-            </div>
-            <div class="spacer"></div>
-            <!-- Совет на будущее, закоменченный код лучше удалять, ибо вполне возможен когда кто-то будет чистить код-->
-            <!-- и увидит комент, человек не удалит его, потому что будет думать, что он важен и таким образом в проекте будет много мусора в виде закоменченного кода-->
 
-            <!--                    <div class="header__account account">-->
-            <!--                        <a href="" class="account__link">Login</a>-->
-            <!--                        <span class="account__span">/ </span>-->
-            <!--                        <a href="" class="account__link">Signup</a>-->
-            <!--                    </div>-->
-            <div class="header__profile profile">
-                <a href="" class="profile__link">
-                    <div class="profile-logo">
-                        <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                        <div class="profile-logo__holder">а</div>
-                    </div>
-                    <div class="profile__info">Andery Vilkelm</div>
-                </a>
+<body class="wrapper">
+    <header class="header wrapper__header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#" class="logo logo--small">Book<span class="logo__span">App</span></a>
+                </div>
+                <div class="header__search search">
+                    <input type="text" class="search__input" placeholder="Search your books ">
+                    <button class="search__icon" type="button">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </div>
+                <div class="spacer"></div>
+                <!-- Совет на будущее, закоменченный код лучше удалять, ибо вполне возможен когда кто-то будет чистить код-->
+                <!-- и увидит комент, человек не удалит его, потому что будет думать, что он важен и таким образом в проекте будет много мусора в виде закоменченного кода-->
+
+                <!--                    <div class="header__account account">-->
+                <!--                        <a href="" class="account__link">Login</a>-->
+                <!--                        <span class="account__span">/ </span>-->
+                <!--                        <a href="" class="account__link">Signup</a>-->
+                <!--                    </div>-->
+                <div class="header__profile profile">
+                    <a href="" class="profile__link">
+                        <div class="profile-logo">
+                            <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
+                            <div class="profile-logo__holder">а</div>
+                        </div>
+                        <div class="profile__info">Andery Vilkelm</div>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<main class="main wrapper__main">
-    <!--Из доки БЭМА -  Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big).-->
-    <section class="detailed">
-        <div class="container">
-            <div class="detailed__wrapper">
-                <div class="detailed__info">
-                    <div class="detailed__img">
-                        <div class="book-img book-img--xl">
-                            <img src="../img/test.jpg" alt="book">
+    </header>
+    <main class="main wrapper__main">
+        <!--Из доки БЭМА -  Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big).-->
+        <section class="detailed">
+            <div class="container">
+                <div class="detailed__wrapper">
+                    <div class="detailed__info">
+                        <div class="detailed__img">
+                            <div class="book-img book-img--xl">
+                                <img src="../img/test.jpg" alt="book">
+                            </div>
+                        </div>
+                        <div class="detailed__buttons">
+                            <a href="#" class="button-link button-link--primary">Write review</a>
+                            <a href="#" class="button-link button-link--contrast">Rate the book</a>
                         </div>
                     </div>
-                    <div class="detailed__buttons">
-                        <a href="#" class="button-link button-link--primary">Write review</a>
-                        <a href="#" class="button-link button-link--contrast">Rate the book</a>
-                    </div>
-                </div>
-                <div class="detailed__info">
-                    <div class="book-info">
-                        <h1 class="book-info__title book-info__title--lg">Echo of the singing sands</h1>
-                        <div class="book-info__footnotes">
-                            <div class="book-info__footnote">Анна Кроу</div>
-                            <div class="book-info__footnote book-info__footnote--addition">Русское фэнтези</div>
-                            <!-- Для улучшения читаемости советую сделать так, что контент блока, в твоей случае "Современная-->
-                            <!-- русская литература" всегда начинался с новой строки, таким образом будет:-->
-                            <!-- <div class="book-info__footnote book-info__footnote&#45;&#45;addition">-->
-                            <!--     Современная русская литература-->
-                            <!-- </div>-->
-                            <!-- Если в селекторе будет очень много символов, то будет непонятно как начинается коннтент, пока не проскролить вправо -->
-                            <div class="book-info__footnote book-info__footnote--addition">Современная русская
-                                литература
-                            </div>
+                    <div class="detailed__info">
+                        <div class="book-info">
+                            <h1 class="book-info__title book-info__title--lg">Echo of the singing sands</h1>
+                            <div class="book-info__footnotes">
+                                <div class="book-info__footnote">Анна Кроу</div>
+                                <div class="book-info__footnote book-info__footnote--addition">Русское фэнтези</div>
+                                <!-- Для улучшения читаемости советую сделать так, что контент блока, в твоей случае "Современная-->
+                                <!-- русская литература" всегда начинался с новой строки, таким образом будет:-->
+                                <!-- <div class="book-info__footnote book-info__footnote&#45;&#45;addition">-->
+                                <!--     Современная русская литература-->
+                                <!-- </div>-->
+                                <!-- Если в селекторе будет очень много символов, то будет непонятно как начинается коннтент, пока не проскролить вправо -->
+                                <div class="book-info__footnote book-info__footnote--addition">Современная русская
+                                    литература
+                                </div>
 
-                        </div>
-                        <div class="book-info__description">Тамила Ассандер - последняя представительница правящей династии Гарета. Единственная,
-                            в чьей крови еще сохранились крохи древнего благославления Богини. Та, кто слышит голос песков.
-                            Та, что была жестоко предана.
-                        </div>
-                        <div class="book-info__description">От яда, с каждой секундой
-                            подбирающегося все ближе к сердцу, королеву не смогли спасти ни жрицы, ни маги. И пока Ее
-                            Величество медленно умирала, Совет прибирал власть к своим рукам. Оказавшись же на пороге войны с северянами -
-                            жестокими варварам, поклоняющимися богу войны Ратусу, Тамиле, поклявшейся защищать свой народ даже ценой собственной жизни и
-                            потерявшей веру в Совет, придется пойти на крайние меры и объединиться с
-                            человеком, о котором ей известно все и ничего - приближенным короля Ориса, державы, два года назад приславшей ей грамоту с ядом.
-                        </div>
-                        <div class="book-info__reviews reviews">
-                            <h3 class="reviews__title">Reviews</h3>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                                <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
-                                </div>
-                                <p class="feedback__text">
-                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и
-                                    даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то
-                                    ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев"
-                                    на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в
-                                    большинстве своём выглядят картонными фигурами, которые тут для массовки поставили.
-                                    Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из
-                                    кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
-                                    Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
-                                </p>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <!--Что-то форматирование кода полетело-->
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">  <!--Опять же, название блока некорректное см 54 строку-->
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="rating__score">4.3</div>
-                                </div>
                             </div>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                                <img src="../img/test.jpg" alt=""
-                                                     class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
+                            <div class="book-info__description">Тамила Ассандер - последняя представительница правящей
+                                династии Гарета. Единственная,
+                                в чьей крови еще сохранились крохи древнего благославления Богини. Та, кто слышит голос
+                                песков.
+                                Та, что была жестоко предана.
+                            </div>
+                            <div class="book-info__description">От яда, с каждой секундой
+                                подбирающегося все ближе к сердцу, королеву не смогли спасти ни жрицы, ни маги. И пока
+                                Ее
+                                Величество медленно умирала, Совет прибирал власть к своим рукам. Оказавшись же на
+                                пороге войны с северянами -
+                                жестокими варварам, поклоняющимися богу войны Ратусу, Тамиле, поклявшейся защищать свой
+                                народ даже ценой собственной жизни и
+                                потерявшей веру в Совет, придется пойти на крайние меры и объединиться с
+                                человеком, о котором ей известно все и ничего - приближенным короля Ориса, державы, два
+                                года назад приславшей ей грамоту с ядом.
+                            </div>
+                            <div class="book-info__reviews reviews">
+                                <h3 class="reviews__title">Reviews</h3>
+                                <div class="feedback">
+                                    <div class="feedback__info">
+                                        <div class="profile">
+                                            <a href="" class="profile__link">
+                                                <div class="profile-logo">
+                                                    <img src="../img/test.jpg" alt=""
+                                                        class="profile-logo__img  profile-logo__img--hidden">
+                                                    <div class="profile-logo__holder">а</div>
+                                                </div>
+                                                <div class="profile__wrapper">
+                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    </div>
+                                                    <div class="profile__status">Qualified user</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div class="feedback__date">5 may, 2021</div>
                                     </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
+                                    <p class="feedback__text">
+                                        Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории
+                                        и
+                                        даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди
+                                        куда-то
+                                        ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в
+                                        "Героев"
+                                        на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в
+                                        большинстве своём выглядят картонными фигурами, которые тут для массовки
+                                        поставили.
+                                        Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из
+                                        кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
+                                        Единственная порадовавшая сцена... <a href="#"
+                                            class="feedback__text--link">Развернуть</a>
+                                    </p>
+                                    <div class="feedback__rating rating">
+                                        <div class="score">
+                                            <!--Что-то форматирование кода полетело-->
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    <!--Опять же, название блока некорректное см 54 строку-->
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="rating__score">4.3</div>
+                                    </div>
                                 </div>
-                                <p class="feedback__text">
-                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
-                                    Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
-                                <!--
+                                <div class="feedback">
+                                    <div class="feedback__info">
+                                        <div class="profile">
+                                            <a href="" class="profile__link">
+                                                <div class="profile-logo">
+                                                    <img src="../img/test.jpg" alt=""
+                                                        class="profile-logo__img  profile-logo__img--hidden">
+                                                    <div class="profile-logo__holder">а</div>
+                                                </div>
+                                                <div class="profile__wrapper">
+                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    </div>
+                                                    <div class="profile__status">Qualified user</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div class="feedback__date">5 may, 2021</div>
+                                    </div>
+                                    <p class="feedback__text">
+                                        Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории
+                                        и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди
+                                        куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то
+                                        рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше
+                                        первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые
+                                        тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из
+                                        машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно
+                                        просто немного поколдовать.
+                                        Единственная порадовавшая сцена... <a href="#"
+                                            class="feedback__text--link">Развернуть</a>
+                                        <!--
                                 Проблемы с форматированием кода выше.
                                 1. Глянь хоткеи для автоматического форматирования в своей IDE
                                 2. Пробегись по проекту глазами, может я что-то пропустил в плане форматирования кода
                                 -->
-                                </p>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <div class="score__star score__star--active">
-                                            <!--Форматирование-->
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
+                                    </p>
+                                    <div class="feedback__rating rating">
+                                        <div class="score">
+                                            <div class="score__star score__star--active">
+                                                <!--Форматирование-->
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
+                                        <div class="rating__score">4.3</div>
                                     </div>
-                                    <div class="rating__score">4.3</div>
                                 </div>
-                            </div>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                               <!-- Если у селектора много параметров то советую писать их в столбец, то есть будет что-то врооде этого
+                                <div class="feedback">
+                                    <div class="feedback__info">
+                                        <div class="profile">
+                                            <a href="" class="profile__link">
+                                                <div class="profile-logo">
+                                                    <!-- Если у селектора много параметров то советую писать их в столбец, то есть будет что-то врооде этого
                                                 <img
                                                     src="../img/test.jpg"
                                                     alt=""
@@ -229,217 +254,234 @@
                                                 >
                                                 -->
 
-                                                <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
+                                                    <img src="../img/test.jpg" alt=""
+                                                        class="profile-logo__img  profile-logo__img--hidden">
+                                                    <div class="profile-logo__holder">а</div>
+                                                </div>
+                                                <div class="profile__wrapper">
+                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    </div>
+                                                    <div class="profile__status">Qualified user</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div class="feedback__date">5 may, 2021</div>
                                     </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
-                                </div>
-                                <p class="feedback__text">
-                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
-                                    <!--Форматирование-->
-                                    Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
-                                </p>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <div class="score__star score__star--active">
-                                            <!--Форматирование-->
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
+                                    <p class="feedback__text">
+                                        Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории
+                                        и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди
+                                        куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то
+                                        рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше
+                                        первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые
+                                        тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из
+                                        машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно
+                                        просто немного поколдовать.
+                                        <!--Форматирование-->
+                                        Единственная порадовавшая сцена... <a href="#"
+                                            class="feedback__text--link">Развернуть</a>
+                                    </p>
+                                    <div class="feedback__rating rating">
+                                        <div class="score">
+                                            <div class="score__star score__star--active">
+                                                <!--Форматирование-->
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
+                                        <div class="rating__score">4.3</div>
                                     </div>
-                                    <div class="rating__score">4.3</div>
                                 </div>
+                                <button type="button" class="reviews__more">More</button>
                             </div>
-                            <button type="button" class="reviews__more">More</button>
-                        </div>
-                        <div class="book-info__rating reviews">
-                            <h3 class="reviews__title">Book rating</h3>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                                <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
+                            <div class="book-info__rating reviews">
+                                <h3 class="reviews__title">Book rating</h3>
+                                <div class="feedback">
+                                    <div class="feedback__info">
+                                        <div class="profile">
+                                            <a href="" class="profile__link">
+                                                <div class="profile-logo">
+                                                    <img src="../img/test.jpg" alt=""
+                                                        class="profile-logo__img  profile-logo__img--hidden">
+                                                    <div class="profile-logo__holder">а</div>
+                                                </div>
+                                                <div class="profile__wrapper">
+                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    </div>
+                                                    <div class="profile__status">Qualified user</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div class="feedback__date">5 may, 2021</div>
                                     </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
-                                </div>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <div class="score__star score__star--active">
-                                            <!--Форматирование-->
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
+                                    <div class="feedback__rating rating">
+                                        <div class="score">
+                                            <div class="score__star score__star--active">
+                                                <!--Форматирование-->
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
+                                        <div class="rating__score">4.3</div>
                                     </div>
-                                    <div class="rating__score">4.3</div>
                                 </div>
+                                <div class="feedback">
+                                    <div class="feedback__info">
+                                        <div class="profile">
+                                            <a href="" class="profile__link">
+                                                <div class="profile-logo">
+                                                    <img src="../img/test.jpg" alt=""
+                                                        class="profile-logo__img  profile-logo__img--hidden">
+                                                    <div class="profile-logo__holder">а</div>
+                                                </div>
+                                                <div class="profile__wrapper">
+                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    </div>
+                                                    <div class="profile__status">Qualified user</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div class="feedback__date">5 may, 2021</div>
+                                    </div>
+                                    <div class="feedback__rating rating">
+                                        <div class="score">
+                                            <div class="score__star score__star--active">
+                                                <!--Форматирование-->
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="rating__score">4.3</div>
+                                    </div>
+                                </div>
+                                <div class="feedback">
+                                    <div class="feedback__info">
+                                        <div class="profile">
+                                            <a href="" class="profile__link">
+                                                <div class="profile-logo">
+                                                    <img src="../img/test.jpg" alt=""
+                                                        class="profile-logo__img  profile-logo__img--hidden">
+                                                    <div class="profile-logo__holder">а</div>
+                                                </div>
+                                                <div class="profile__wrapper">
+                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    </div>
+                                                    <div class="profile__status">Qualified user</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div class="feedback__date">5 may, 2021</div>
+                                    </div>
+                                    <div class="feedback__rating rating">
+                                        <div class="score">
+                                            <div class="score__star score__star--active">
+                                                <!--Форматирование-->
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star score__star--active">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                            <div class="score__star">
+                                                <span class="material-symbols-rounded">
+                                                    star
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="rating__score">4.3</div>
+                                    </div>
+                                </div>
+                                <button type="button" class="reviews__more">More</button>
                             </div>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                                <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
-                                </div>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <div class="score__star score__star--active">
-                                            <!--Форматирование-->
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="rating__score">4.3</div>
-                                </div>
-                            </div>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                                <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
-                                </div>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <div class="score__star score__star--active">
-                                            <!--Форматирование-->
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="rating__score">4.3</div>
-                                </div>
-                            </div>
-                            <button type="button" class="reviews__more">More</button>
                         </div>
                     </div>
-                </div>
-                <div class="detailed__buttons detailed__buttons--end">
-                    <a href="#" class="button-link button-link--primary">Write review</a>
-                    <a href="#" class="button-link button-link--contrast">Rate the book</a>
+                    <div class="detailed__buttons detailed__buttons--end">
+                        <a href="#" class="button-link button-link--primary">Write review</a>
+                        <a href="#" class="button-link button-link--contrast">Rate the book</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 </body>
+
 </html>

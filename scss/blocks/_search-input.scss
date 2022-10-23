@@ -23,7 +23,8 @@
       color: var(--placeholder);
     }
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       outline: none;
     }
   }

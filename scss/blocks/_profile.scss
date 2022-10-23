@@ -6,7 +6,8 @@
     display: flex;
     gap: 15px;
 
-    &:hover .profile-logo__holder { //"увеличение веса класса"
+    &:hover .profile-logo__holder {
+      //"увеличение веса класса"
       color: var(--primary);
       background-color: var(--white);
       border: 1px solid var(--primary);

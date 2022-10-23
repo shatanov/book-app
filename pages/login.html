@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,39 +13,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="../scss/main.css">
 </head>
+
 <body class="wrapper">
-<main class="main-registration">
-    <div class="registration">
-        <div class="registration__logo">
-            <!--Тяжело читать такую вложеность. Так немного лучше будеть
+    <main class="main-registration">
+        <div class="registration">
+            <div class="registration__logo">
+                <!--Тяжело читать такую вложеность. Так немного лучше будеть
             <a href="#" class="logo logo&#45;&#45;large">
                 Book<span class="logo__span">App</span>
             </a>-->
 
-            <a href="#" class="logo logo--large">Book<span class="logo__span">App</span></a>
-        </div>
-        <form action="" class="registration__form form">
-            <div class="registration__inputs">
-                <label>
-                    <span class="form-label">Email</span>
-                    <input class="text-field" type="email" placeholder="someexample@example.com" required>
-                </label>
-                <label>
-                    <span class="form-label">Password</span>
-                    <input class="text-field" type="password" required>
-                </label>
+                <a href="#" class="logo logo--large">Book<span class="logo__span">App</span></a>
             </div>
-            <button class="form__btn" type="submit">Log in</button>
-        </form>
-        <div class="registration__text">
-            No account?
-            <!--
+            <form action="" class="registration__form form">
+                <div class="registration__inputs">
+                    <label>
+                        <span class="form-label">Email</span>
+                        <input class="text-field" type="email" placeholder="someexample@example.com" required>
+                    </label>
+                    <label>
+                        <span class="form-label">Password</span>
+                        <input class="text-field" type="password" required>
+                    </label>
+                </div>
+                <button class="form__btn" type="submit">Log in</button>
+            </form>
+            <div class="registration__text">
+                No account?
+                <!--
             Старайся не делать пробелы в контенте селектора явно, это может тебе вёрстку сломать, не сильно, но будет бросаться в глаза и будет проблематично найти ошибку
             Если он нужен, то используй &nbsp. Это касается и других символов. Глянь https://mailtrap.io/blog/nbsp/
             -->
-            <a href="" class="registration__text--link"> Create</a>
+                <a href="" class="registration__text--link"> Create</a>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 </body>
+
 </html>

@@ -39,6 +39,11 @@
   color: var(--white);
   cursor: pointer;
 
+  &--sm {
+    width: 250px;
+    height: 55px;
+  }
+
   &:hover {
     color: var(--primary);
     background-color: var(--white);

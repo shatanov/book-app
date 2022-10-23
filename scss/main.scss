@@ -3,6 +3,7 @@
 @import "pages/_registration";
 @import "pages/main-page";
 @import "pages/detailed";
+@import "pages/review";
 
 .wrapper {
   font-family: 'Poppins', sans-serif;
@@ -31,6 +32,7 @@
 
 :root {
   --dark-grey: #2E2E2E;
+  --light-grey: #DCE1E2;
   --bg: #F5F5F8;
   --placeholder: #A3ABAD;
   --primary: #6E49CB;

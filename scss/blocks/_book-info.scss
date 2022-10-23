@@ -35,7 +35,7 @@
     line-height: 27px;
     color: var(--dark-grey);
 
-    &--xl {
+    &--sm {
       font-size: 16px;
       line-height: 24px;
     }
@@ -46,7 +46,7 @@
       color: var(--contrast);
     }
 
-    &--addition_xl {
+    &--addition_sm {
       font-size: 14px;
       line-height: 21px;
       color: var(--contrast);
@@ -54,19 +54,19 @@
   }
 
   &__description {
-    margin-bottom: 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: var(--grey);
     padding-bottom: 15px;
-    &--xl {
+    &--sm {
       font-size: 16px;
       line-height: 26px;
     }
   }
 
   &__reviews {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 

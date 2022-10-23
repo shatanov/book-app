@@ -1,0 +1,67 @@
+@import "../blocks/rating";
+@import "../mixins";
+
+.review {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__info {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  &__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 230px;
+    background-color: var(--white);
+    border: 1.5px solid var(--light-grey);
+    border-radius: 10px;
+    padding: 15px 15px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--placeholder);
+    }
+  }
+}
+
+@include desktop {
+  .review {
+    &__info {
+      flex-wrap: nowrap;
+    }
+
+    &__img {
+      margin: 0;
+    }
+
+    &__rating {
+      justify-content: start;
+    }
+
+  }
+}

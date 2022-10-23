@@ -10,13 +10,14 @@
     border: none;
     background-color: var(--light-primary);
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 400;// Значение по-умолчанию
+    // Эти 4 свойства вместе (15-18 строки) я вижу у тебя довольно часто. Хороший кандидат для выноса в отдельный класс типа "flex_centered" (название класса можно и лучше придумать)
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 21px; // Очень часто вижу это свойства с этим значением
     color: var(--primary);
     cursor: pointer;
     &:hover {

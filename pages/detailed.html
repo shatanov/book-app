@@ -32,6 +32,9 @@
                 </button>
             </div>
             <div class="spacer"></div>
+            <!-- Совет на будущее, закоменченный код лучше удалять, ибо вполне возможен когда кто-то будет чистить код-->
+            <!-- и увидит комент, человек не удалит его, потому что будет думать, что он важен и таким образом в проекте будет много мусора в виде закоменченного кода-->
+
             <!--                    <div class="header__account account">-->
             <!--                        <a href="" class="account__link">Login</a>-->
             <!--                        <span class="account__span">/ </span>-->
@@ -50,6 +53,7 @@
     </div>
 </header>
 <main class="main wrapper__main">
+    <!--Из доки БЭМА -  Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big).-->
     <section class="detailed">
         <div class="container">
             <div class="detailed__wrapper">
@@ -70,7 +74,16 @@
                         <div class="book-info__footnotes">
                             <div class="book-info__footnote">Анна Кроу</div>
                             <div class="book-info__footnote book-info__footnote--addition">Русское фэнтези</div>
-                            <div class="book-info__footnote book-info__footnote--addition">Современная русская литература</div>
+                            <!-- Для улучшения читаемости советую сделать так, что контент блока, в твоей случае "Современная-->
+                            <!-- русская литература" всегда начинался с новой строки, таким образом будет:-->
+                            <!-- <div class="book-info__footnote book-info__footnote&#45;&#45;addition">-->
+                            <!--     Современная русская литература-->
+                            <!-- </div>-->
+                            <!-- Если в селекторе будет очень много символов, то будет непонятно как начинается коннтент, пока не проскролить вправо -->
+                            <div class="book-info__footnote book-info__footnote--addition">Современная русская
+                                литература
+                            </div>
+
                         </div>
                         <div class="book-info__description">Тамила Ассандер - последняя представительница правящей династии Гарета. Единственная,
                             в чьей крови еще сохранились крохи древнего благославления Богини. Та, кто слышит голос песков.
@@ -103,12 +116,78 @@
                                     <div class="feedback__date">5 may, 2021</div>
                                 </div>
                                 <p class="feedback__text">
-                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
+                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и
+                                    даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то
+                                    ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев"
+                                    на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в
+                                    большинстве своём выглядят картонными фигурами, которые тут для массовки поставили.
+                                    Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из
+                                    кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
                                     Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
                                 </p>
                                 <div class="feedback__rating rating">
                                     <div class="score">
+                                        <!--Что-то форматирование кода полетело-->
                                         <div class="score__star score__star--active">
+                           <span class="material-symbols-rounded">  <!--Опять же, название блока некорректное см 54 строку-->
+                            star
+                            </span>
+                                        </div>
+                                        <div class="score__star score__star--active">
+                           <span class="material-symbols-rounded">
+                            star
+                            </span>
+                                        </div>
+                                        <div class="score__star score__star--active">
+                           <span class="material-symbols-rounded">
+                            star
+                            </span>
+                                        </div>
+                                        <div class="score__star score__star--active">
+                           <span class="material-symbols-rounded">
+                            star
+                            </span>
+                                        </div>
+                                        <div class="score__star">
+                           <span class="material-symbols-rounded">
+                            star
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="rating__score">4.3</div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <div class="feedback__info">
+                                    <div class="profile">
+                                        <a href="" class="profile__link">
+                                            <div class="profile-logo">
+                                                <img src="../img/test.jpg" alt=""
+                                                     class="profile-logo__img  profile-logo__img--hidden">
+                                                <div class="profile-logo__holder">а</div>
+                                            </div>
+                                            <div class="profile__wrapper">
+                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
+                                                <div class="profile__status">Qualified user</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <div class="feedback__date">5 may, 2021</div>
+                                </div>
+                                <p class="feedback__text">
+                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
+                                    Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
+                                <!--
+                                Проблемы с форматированием кода выше.
+                                1. Глянь хоткеи для автоматического форматирования в своей IDE
+                                2. Пробегись по проекту глазами, может я что-то пропустил в плане форматирования кода
+                                -->
+                                </p>
+                                <div class="feedback__rating rating">
+                                    <div class="score">
+                                        <div class="score__star score__star--active">
+                                            <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>
@@ -142,6 +221,14 @@
                                     <div class="profile">
                                         <a href="" class="profile__link">
                                             <div class="profile-logo">
+                                               <!-- Если у селектора много параметров то советую писать их в столбец, то есть будет что-то врооде этого
+                                                <img
+                                                    src="../img/test.jpg"
+                                                    alt=""
+                                                    class="profile-logo__img  profile-logo__img&#45;&#45;hidden"
+                                                >
+                                                -->
+
                                                 <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
                                                 <div class="profile-logo__holder">а</div>
                                             </div>
@@ -156,63 +243,13 @@
                                 </div>
                                 <p class="feedback__text">
                                     Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
+                                    <!--Форматирование-->
                                     Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
                                 </p>
                                 <div class="feedback__rating rating">
                                     <div class="score">
                                         <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star score__star--active">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                        <div class="score__star">
-                           <span class="material-symbols-rounded">
-                            star
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="rating__score">4.3</div>
-                                </div>
-                            </div>
-                            <div class="feedback">
-                                <div class="feedback__info">
-                                    <div class="profile">
-                                        <a href="" class="profile__link">
-                                            <div class="profile-logo">
-                                                <img src="../img/test.jpg" alt="" class="profile-logo__img  profile-logo__img--hidden">
-                                                <div class="profile-logo__holder">а</div>
-                                            </div>
-                                            <div class="profile__wrapper">
-                                                <div class="profile__info profile__info--sm">Vladimir Menshikov</div>
-                                                <div class="profile__status">Qualified user</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="feedback__date">5 may, 2021</div>
-                                </div>
-                                <p class="feedback__text">
-                                    Все бы ничего - и адекватные герои, и отсутствие явных логических дыр в истории и даже какая-никакая, а толковая политика, но. Скучно. Монотонно. Вяло. Люди куда-то ходят, плывут, даже телепортируются, а я слежу за этим будто кто-то рядом в "Героев" на компьютере играет. "Человечки побежали". Герои дальше первого плана и вовсе в большинстве своём выглядят картонными фигурами, которые тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно просто немного поколдовать.
-                                    Единственная порадовавшая сцена... <a href="#" class="feedback__text--link">Развернуть</a>
-                                </p>
-                                <div class="feedback__rating rating">
-                                    <div class="score">
-                                        <div class="score__star score__star--active">
+                                            <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>
@@ -265,6 +302,7 @@
                                 <div class="feedback__rating rating">
                                     <div class="score">
                                         <div class="score__star score__star--active">
+                                            <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>
@@ -313,6 +351,7 @@
                                 <div class="feedback__rating rating">
                                     <div class="score">
                                         <div class="score__star score__star--active">
+                                            <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>
@@ -361,6 +400,7 @@
                                 <div class="feedback__rating rating">
                                     <div class="score">
                                         <div class="score__star score__star--active">
+                                            <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>

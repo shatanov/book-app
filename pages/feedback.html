@@ -16,6 +16,8 @@
     <!--  Star  -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!--Юзать относительные пути к файлам не лучшая идея, ибо при каждом изменении расположения файла придется везде менять
+    Юзай абсолютные. В других файлах тоже поправь. Это касается не только стилей, но и картинок-->
     <link rel="stylesheet" href="../scss/main.css">
 </head>
 <body class="wrapper">
@@ -79,6 +81,7 @@
                         <div class="review__rating rating">
                             <div class="score">
                                 <div class="score__star score__star--active">
+                                    <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>
@@ -112,8 +115,10 @@
                     <form action="" class="review__form form">
                         <label>
                             <span class="form-label">Rate this book</span>
+                            <!--Element div is not allowed here - IDE ругается, потому что внутри label нельзя вставлять div-->
                             <div class="score">
                                 <div class="score__star score__star--active">
+                                    <!--Форматирование-->
                            <span class="material-symbols-rounded">
                             star
                             </span>

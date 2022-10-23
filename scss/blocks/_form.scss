@@ -1,9 +1,11 @@
 .form-label {
   display: block;
-  font-weight: 400;
+  font-weight: 400; // Значение по-умолчанию
   font-size: 14px;
   line-height: 21px;
   color: var(--grey);
+  // Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.
+  // https://ru.bem.info/methodology/quick-start/#%D0%B1%D0%BB%D0%BE%D0%BA
   margin-bottom: 5px;
 }
 
@@ -12,9 +14,11 @@
   width: 100%;
   height: 60px;
   background: var(--bg);
+  // Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.
+  // https://ru.bem.info/methodology/quick-start/#%D0%B1%D0%BB%D0%BE%D0%BA
   border: none;
   border-radius: 10px;
-  font-weight: 400;
+  font-weight: 400; // Значение по-умолчанию
   font-size: 18px;
   line-height: 27px;
   color: var(--dark-grey);

@@ -47,7 +47,6 @@
     }
   }
 
-  // TODO При большом экране книги выстраиваются в 3 колонки, а дожны в 2, можно изменять значение колонок в media????
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

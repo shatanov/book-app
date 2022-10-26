@@ -34,8 +34,7 @@
                     </button>
                 </div>
                 <div class="spacer"></div>
-                <!-- Совет на будущее, закоменченный код лучше удалять, ибо вполне возможен когда кто-то будет чистить код-->
-                <!-- и увидит комент, человек не удалит его, потому что будет думать, что он важен и таким образом в проекте будет много мусора в виде закоменченного кода-->
+                <!--        Блок регистрации для страницы при условии что пользователь не зарегистрирован        -->
 
                 <!--                    <div class="header__account account">-->
                 <!--                        <a href="" class="account__link">Login</a>-->
@@ -55,7 +54,6 @@
         </div>
     </header>
     <main class="main wrapper__main">
-        <!--Из доки БЭМА -  Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big).-->
         <section class="detailed">
             <div class="container">
                 <div class="detailed__wrapper">
@@ -74,31 +72,29 @@
                         <div class="book-info">
                             <h1 class="book-info__title book-info__title--lg">Echo of the singing sands</h1>
                             <div class="book-info__footnotes">
-                                <div class="book-info__footnote">Анна Кроу</div>
-                                <div class="book-info__footnote book-info__footnote--addition">Русское фэнтези</div>
-                                <!-- Для улучшения читаемости советую сделать так, что контент блока, в твоей случае "Современная-->
-                                <!-- русская литература" всегда начинался с новой строки, таким образом будет:-->
-                                <!-- <div class="book-info__footnote book-info__footnote&#45;&#45;addition">-->
-                                <!--     Современная русская литература-->
-                                <!-- </div>-->
-                                <!-- Если в селекторе будет очень много символов, то будет непонятно как начинается коннтент, пока не проскролить вправо -->
-                                <div class="book-info__footnote book-info__footnote--addition">Современная русская
-                                    литература
+                                <div class="book-info__footnote">
+                                    Анна Кроу
                                 </div>
-
+                                <div class="book-info__footnote book-info__footnote--addition">
+                                    Русское фэнтези
+                                </div>
+                                <div class="book-info__footnote book-info__footnote--addition">
+                                    Современная русская литература
+                                </div>
                             </div>
-                            <div class="book-info__description">Тамила Ассандер - последняя представительница правящей
+                            <div class="book-info__description">
+                                Тамила Ассандер - последняя представительница правящей
                                 династии Гарета. Единственная,
                                 в чьей крови еще сохранились крохи древнего благославления Богини. Та, кто слышит голос
                                 песков.
                                 Та, что была жестоко предана.
                             </div>
-                            <div class="book-info__description">От яда, с каждой секундой
-                                подбирающегося все ближе к сердцу, королеву не смогли спасти ни жрицы, ни маги. И пока
-                                Ее
-                                Величество медленно умирала, Совет прибирал власть к своим рукам. Оказавшись же на
-                                пороге войны с северянами -
-                                жестокими варварам, поклоняющимися богу войны Ратусу, Тамиле, поклявшейся защищать свой
+                            <div class="book-info__description">
+                                От яда, с каждой секундой подбирающегося все ближе к сердцу, королеву не смогли спасти
+                                ни жрицы, ни маги. И пока
+                                Ее Величество медленно умирала, Совет прибирал власть к своим рукам. Оказавшись же на
+                                пороге войны с северянами - жестокими варварам, поклоняющимися богу войны Ратусу,
+                                Тамиле, поклявшейся защищать свой
                                 народ даже ценой собственной жизни и
                                 потерявшей веру в Совет, придется пойти на крайние меры и объединиться с
                                 человеком, о котором ей известно все и ничего - приближенным короля Ориса, державы, два
@@ -116,7 +112,8 @@
                                                     <div class="profile-logo__holder">а</div>
                                                 </div>
                                                 <div class="profile__wrapper">
-                                                    <div class="profile__info profile__info--sm">Vladimir Menshikov
+                                                    <div class="profile__info profile__info--sm">
+                                                        Vladimir Menshikov
                                                     </div>
                                                     <div class="profile__status">Qualified user</div>
                                                 </div>
@@ -142,10 +139,8 @@
                                     </p>
                                     <div class="feedback__rating rating">
                                         <div class="score">
-                                            <!--Что-то форматирование кода полетело-->
                                             <div class="score__star score__star--active">
                                                 <span class="material-symbols-rounded">
-                                                    <!--Опять же, название блока некорректное см 54 строку-->
                                                     star
                                                 </span>
                                             </div>
@@ -203,16 +198,10 @@
                                         просто немного поколдовать.
                                         Единственная порадовавшая сцена... <a href="#"
                                             class="feedback__text--link">Развернуть</a>
-                                        <!--
-                                Проблемы с форматированием кода выше.
-                                1. Глянь хоткеи для автоматического форматирования в своей IDE
-                                2. Пробегись по проекту глазами, может я что-то пропустил в плане форматирования кода
-                                -->
                                     </p>
                                     <div class="feedback__rating rating">
                                         <div class="score">
                                             <div class="score__star score__star--active">
-                                                <!--Форматирование-->
                                                 <span class="material-symbols-rounded">
                                                     star
                                                 </span>
@@ -246,14 +235,6 @@
                                         <div class="profile">
                                             <a href="" class="profile__link">
                                                 <div class="profile-logo">
-                                                    <!-- Если у селектора много параметров то советую писать их в столбец, то есть будет что-то врооде этого
-                                                <img
-                                                    src="../img/test.jpg"
-                                                    alt=""
-                                                    class="profile-logo__img  profile-logo__img&#45;&#45;hidden"
-                                                >
-                                                -->
-
                                                     <img src="../img/test.jpg" alt=""
                                                         class="profile-logo__img  profile-logo__img--hidden">
                                                     <div class="profile-logo__holder">а</div>
@@ -277,14 +258,12 @@
                                         тут для массовки поставили. Магия, опять же, исключительно как эрзац " бога из
                                         машины", а точнее "рояля из кустов" - когда ситуация кажется безвыходной, нужно
                                         просто немного поколдовать.
-                                        <!--Форматирование-->
                                         Единственная порадовавшая сцена... <a href="#"
                                             class="feedback__text--link">Развернуть</a>
                                     </p>
                                     <div class="feedback__rating rating">
                                         <div class="score">
                                             <div class="score__star score__star--active">
-                                                <!--Форматирование-->
                                                 <span class="material-symbols-rounded">
                                                     star
                                                 </span>
@@ -339,7 +318,6 @@
                                     <div class="feedback__rating rating">
                                         <div class="score">
                                             <div class="score__star score__star--active">
-                                                <!--Форматирование-->
                                                 <span class="material-symbols-rounded">
                                                     star
                                                 </span>
@@ -390,7 +368,6 @@
                                     <div class="feedback__rating rating">
                                         <div class="score">
                                             <div class="score__star score__star--active">
-                                                <!--Форматирование-->
                                                 <span class="material-symbols-rounded">
                                                     star
                                                 </span>
@@ -441,7 +418,6 @@
                                     <div class="feedback__rating rating">
                                         <div class="score">
                                             <div class="score__star score__star--active">
-                                                <!--Форматирование-->
                                                 <span class="material-symbols-rounded">
                                                     star
                                                 </span>

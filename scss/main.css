@@ -296,11 +296,6 @@
     display: none;
   }
 }
-@media screen and (min-width: 767px) {
-  .header__wrapper > .spacer {
-    display: none;
-  }
-}
 .score {
   display: flex;
   gap: 10px;

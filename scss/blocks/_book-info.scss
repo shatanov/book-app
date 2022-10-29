@@ -1,63 +1,61 @@
 @import "../mixins";
 
 .book-info {
-
   &__title {
     margin: 0 0 12px;
-    font-size: 24px;
+    font-size: var(--font-size-l);
     line-height: 36px;
     color: var(--dark-grey);
     text-align: center;
 
     &--lg {
-      font-weight: 500;
-      font-size: 36px;
+      font-weight: var(--text-bold_m);
+      font-size: var(--font-size-xl);
       line-height: 54px;
     }
   }
 
+// TODO Вынести footnotes в отдельный блок
 
   &__footnotes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-position(center);
     gap: 30px;
     margin-bottom: 19px;
   }
 
   &__footnote {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: var(--text-bold_m);
+    font-size: var(--font-size-m);
     line-height: 27px;
     color: var(--dark-grey);
 
     &--sm {
-      font-size: 16px;
+      font-size: var(--font-size-s);
       line-height: 24px;
     }
 
     &--addition {
-      font-size: 16px;
+      font-size: var(--font-size-s);
       line-height: 24px;
       color: var(--contrast);
     }
 
     &--addition_sm {
-      font-size: 14px;
+      font-size: var(--font-size-xs);
       line-height: 21px;
       color: var(--contrast);
     }
   }
 
   &__description {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: var(--text-bold_m);
+    font-size: var(--font-size-m);
     line-height: 27px;
     color: var(--grey);
     padding-bottom: 15px;
 
     &--sm {
-      font-size: 16px;
+      font-size: var(--font-size-s);
       line-height: 26px;
     }
   }
@@ -66,7 +64,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
 }
 
 @include desktop {

@@ -13,6 +13,13 @@
 @import "./blocks/button-link";
 @import "./blocks/book-info";
 @import "./blocks/form";
+@import "./blocks/score";
+@import "./blocks/feedback";
+@import "./blocks/reviews";
+@import "./blocks/rating";
+@import "./blocks/book";
+@import "./blocks/genres-block";
+
 
 // Лучше всё же вынести эти классы в новый файл, а этот файл будет содержать только импорты, что-то вроде точки входа получится
 .wrapper {

@@ -8,10 +8,9 @@
   gap: 20px;
   flex-wrap: wrap;
 
-  &__img {
-    img {
-      // Пустой? Лучше убрать
-    }
+  &__score {
+    display: flex;
+    justify-content: start;
   }
 
   &__info {

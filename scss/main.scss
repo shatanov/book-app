@@ -48,6 +48,7 @@
 }
 
 :root {
+  //Color
   --dark-grey: #2E2E2E;
   --light-grey: #DCE1E2;
   --bg: #F5F5F8;
@@ -58,4 +59,11 @@
   --contrast: #FC6D26;
   --white: #fff;
   --profile-logo: #6E49CB;
+
+  //Text
+  --text-bold_m: 500;
+  --text-bold_l: 600;
+
+  --text-size-m: 18px;
+  --font-size-s: 14px;
 }

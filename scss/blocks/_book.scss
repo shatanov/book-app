@@ -20,16 +20,8 @@
   }
 
   &__name {
-    // Лучше создать пару классов для разных значений font-weight. Так ты избежишь копипасты.
-    // Не стоит бояться выносить свойства который очень часто повторяются в отдельные классы
-    // например font-weight: 500 = text-bold_m
-    // например font-weight: 600 = text-bold_l
-    // Окончания - обозначение размеров, например xl, xs, xxl и тп. У тебя так в _book-img.scss понимаешь о чем я
-    font-weight: 500;
-    // С размером шрифта настоятельно советую поступить аналогинчо.
-    // Создать переменные --font-size-l: 22px (это я к примеру)
-    // и юзать их в классах типа .text-small, text-xs, text-l и тп
-    font-size: 18px;
+    font-weight: var(--text-bold_m);
+    font-size: var(--text-size-m);
     line-height: 27px;
     color: var(--dark-grey);
     text-decoration: none;
@@ -41,14 +33,12 @@
   }
 
   &__description {
-    font-size: 14px;
+    font-size: var(--text-size-s);
     line-height: 21px;
     color: var(--grey);
     text-overflow: ellipsis;
     overflow: hidden;
   }
-
-
 }
 
 @include mobile-s {

@@ -685,8 +685,8 @@
   gap: 12px;
 }
 .book__name {
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: var(--text-bold_m);
+  font-size: var(--text-size-m);
   line-height: 27px;
   color: var(--dark-grey);
   text-decoration: none;
@@ -696,7 +696,7 @@
   text-decoration: underline;
 }
 .book__description {
-  font-size: 14px;
+  font-size: var(--text-size-s);
   line-height: 21px;
   color: var(--grey);
   text-overflow: ellipsis;
@@ -776,6 +776,10 @@
   --contrast: #FC6D26;
   --white: #fff;
   --profile-logo: #6E49CB;
+  --text-bold_m: 500;
+  --text-bold_l: 600;
+  --text-size-m: 18px;
+  --font-size-s: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,7 @@
+@import "../mixins";
+
 .search {
-  display: inline-flex;
+  display: none;
   border-radius: 10px;
   background: var(--bg);
   flex: 2;
@@ -37,5 +39,11 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+}
+
+@include desktop {
+  .search {
+    display: inline-flex;
   }
 }

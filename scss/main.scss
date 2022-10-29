@@ -5,6 +5,11 @@
 @import "pages/detailed";
 @import "pages/review";
 
+//Blocks
+@import "./blocks/search-input";
+@import "./blocks/profile-logo";
+@import "./blocks/profile";
+
 // Лучше всё же вынести эти классы в новый файл, а этот файл будет содержать только импорты, что-то вроде точки входа получится
 .wrapper {
   font-family: 'Poppins', sans-serif;

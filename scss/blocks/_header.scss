@@ -1,14 +1,11 @@
 @import "../_mixins";
-// Поскольку файл находится в той же директории можно просто @import "search-input"; Аналогично и в других файлах
-@import "../blocks/search-input";
-@import "../blocks/profile-logo";
-@import "../blocks/profile";
 
 .header {
   height: 60px;
 
   &__wrapper {
     display: flex;
+    gap: 20px;
   }
 
   &__logo {
@@ -16,7 +13,7 @@
   }
 
   &__search {
-    @include full(center);
+    @include full(start);
   }
 
   &__account {
@@ -57,20 +54,3 @@
   }
 }
 
-// Многовато лишних строк
-
-
-@include mobile {
-  .search {
-    display: none;
-  }
-}
-
-@include desktop {
- // TODO убрать spacer
-  // Не стоит делать так в связке с БЭМ, таким способом ты увеличиваешься вес для выбранного класса, что не соотносится с БЭМом
-  // Далее буду помечать такие места как "увеличение веса класса"
-  //.header__wrapper>.spacer {
-  //  display: none;
-  //}
-}

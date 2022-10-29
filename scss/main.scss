@@ -9,9 +9,10 @@
 @import "./blocks/search-input";
 @import "./blocks/profile-logo";
 @import "./blocks/profile";
-@import "./blocks/book-img"; // писал по этому поводу
+@import "./blocks/book-img";
 @import "./blocks/button-link";
 @import "./blocks/book-info";
+@import "./blocks/form";
 
 // Лучше всё же вынести эти классы в новый файл, а этот файл будет содержать только импорты, что-то вроде точки входа получится
 .wrapper {

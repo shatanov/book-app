@@ -1,5 +1,9 @@
 @import "../mixins";
 
+.login {
+  height: 100vh;
+}
+
 .main-registration {
   max-width: 600px;
   display: flex;

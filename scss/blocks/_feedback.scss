@@ -6,14 +6,12 @@
   }
 
   &__date {
-    font-weight: 400; // Значение по-умолчанию
     font-size: 14px;
     line-height: 21px;
     color: var(--placeholder);
   }
 
   &__text {
-    font-weight: 400; // Значение по-умолчанию
     font-size: 14px;
     line-height: 25px;
     color: var(--grey);
@@ -31,7 +29,4 @@
   &__rating {
     margin-bottom: 20px;
   }
-
-  // Лишние пустые строки
-
 }

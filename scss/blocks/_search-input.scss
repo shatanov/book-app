@@ -12,14 +12,12 @@
     width: 100%;
     box-sizing: border-box;
     border: none;
-    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: var(--dark-grey);
     padding: 15px 20px;
 
     &::placeholder {
-      font-weight: 400; // Значение по-умолчанию
       font-size: 18px;
       line-height: 27px;
       color: var(--placeholder);

@@ -63,7 +63,6 @@
 }
 
 .registration__text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: #000000;
@@ -126,7 +125,6 @@
   margin-left: 5px;
 }
 .account__span {
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: #000000;
@@ -291,7 +289,6 @@
   padding: 15px 15px;
 }
 .review__textarea::placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--placeholder);
@@ -320,14 +317,12 @@
   width: 100%;
   box-sizing: border-box;
   border: none;
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: var(--dark-grey);
   padding: 15px 20px;
 }
 .search__input::placeholder {
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: var(--placeholder);
@@ -401,7 +396,6 @@
   flex-direction: column;
 }
 .profile__info {
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: var(--dark-grey);
@@ -410,11 +404,9 @@
   align-items: center;
 }
 .profile__info--sm {
-  font-size: 16px;
   line-height: 24px;
 }
 .profile__status {
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: var(--grey);
@@ -478,12 +470,10 @@
 }
 
 .book-info__title {
-  margin: 0;
-  font-weight: 400;
+  margin: 0 0 12px;
   font-size: 24px;
   line-height: 36px;
   color: var(--dark-grey);
-  margin-bottom: 12px;
   text-align: center;
 }
 .book-info__title--lg {
@@ -558,7 +548,6 @@
   background: var(--bg);
   border: none;
   border-radius: 10px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: var(--dark-grey);
@@ -620,13 +609,11 @@
   align-items: center;
 }
 .feedback__date {
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: var(--placeholder);
 }
 .feedback__text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 25px;
   color: var(--grey);
@@ -655,7 +642,6 @@
   background-color: transparent;
   align-items: center;
   border: none;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -710,7 +696,6 @@
   text-decoration: underline;
 }
 .book__description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: var(--grey);
@@ -738,7 +723,6 @@
   border: none;
   background-color: var(--light-primary);
   border-radius: 5px;
-  font-weight: 400;
   display: flex;
   text-align: center;
   align-items: center;

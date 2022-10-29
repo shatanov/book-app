@@ -7,7 +7,6 @@
     gap: 15px;
 
     &:hover .profile-logo__holder {
-      //"увеличение веса класса"
       color: var(--primary);
       background-color: var(--white);
       border: 1px solid var(--primary);
@@ -25,7 +24,6 @@
 
 
   &__info {
-    font-weight: 400; // Значение по-умолчанию
     font-size: 18px;
     line-height: 27px;
     color: var(--dark-grey);
@@ -34,13 +32,11 @@
     align-items: center;
 
     &--sm {
-      font-size: 16px; // значение по-умолчанию
       line-height: 24px;
     }
   }
 
   &__status {
-    font-weight: 400; // значение по-умолчанию
     font-size: 14px;
     line-height: 21px;
     color: var(--grey);

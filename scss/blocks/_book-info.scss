@@ -3,13 +3,10 @@
 .book-info {
 
   &__title {
-    // margin есть в 9 и 14 строках, можно заменить одним -  margin: 0 0 12px;. К слову IDE мне об этом подсказала)
-    margin: 0;
-    font-weight: 400; // Значение по-умолчанию и так 400, нет смысла явно задавать. Дальше такие кейсы я будут помечать просто "Значение по-умолчанию"
+    margin: 0 0 12px;
     font-size: 24px;
     line-height: 36px;
     color: var(--dark-grey);
-    margin-bottom: 12px;
     text-align: center;
 
     &--lg {

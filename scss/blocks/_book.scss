@@ -41,7 +41,6 @@
   }
 
   &__description {
-    font-weight: 400; // font-weight имеет значение по-умолчанию 400, нет смысла прописывать это явно
     font-size: 14px;
     line-height: 21px;
     color: var(--grey);
@@ -59,8 +58,5 @@
     &__name {
       text-align: left;
     }
-
-    // Две пустые строки тут явно лишние
-
   }
 }

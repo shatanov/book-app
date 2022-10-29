@@ -422,19 +422,19 @@
   object-fit: cover;
   width: 140px;
   height: 232px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-m);
 }
 .book-img--xl img {
   object-fit: cover;
   width: 253px;
   height: 392px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-m);
 }
 .book-img--sm img {
   object-fit: cover;
   width: 143px;
   height: 222px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-m);
 }
 
 .button-link {
@@ -780,6 +780,7 @@
   --text-bold_l: 600;
   --text-size-m: 18px;
   --font-size-s: 14px;
+  --border-radius-m: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

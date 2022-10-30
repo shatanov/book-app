@@ -721,12 +721,12 @@
   height: 29px;
   border: none;
   background-color: var(--light-primary);
-  border-radius: 5px;
-  display: flex;
+  border-radius: var(--border-radius-s);
   text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: var(--font-size-xs);
   line-height: 21px;
   color: var(--primary);
   cursor: pointer;
@@ -783,6 +783,7 @@
   --font-size-l: 24px;
   --font-size-xl: 36px;
   --border-radius-m: 10px;
+  --border-radius-s: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

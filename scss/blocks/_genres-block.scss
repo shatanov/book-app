@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .genres-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(89px, 93px));
@@ -9,14 +11,11 @@
     height: 29px;
     border: none;
     background-color: var(--light-primary);
-    border-radius: 5px;
-    // Эти 4 свойства вместе (15-18 строки) я вижу у тебя довольно часто. Хороший кандидат для выноса в отдельный класс типа "flex_centered" (название класса можно и лучше придумать)
-    display: flex;
+    border-radius: var(--border-radius-s);
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    line-height: 21px; // Очень часто вижу это свойства с этим значением
+    @include flex-position(center);
+    font-size: var(--font-size-xs);
+    line-height: 21px;
     color: var(--primary);
     cursor: pointer;
 

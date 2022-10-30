@@ -9,7 +9,7 @@
     &:hover .profile-logo__holder {
       color: var(--primary);
       background-color: var(--white);
-      border: 1px solid var(--primary);
+      @include border(var(--primary));
     }
 
     &:hover .profile__info {
@@ -22,14 +22,11 @@
     flex-direction: column;
   }
 
-
   &__info {
-    font-size: 18px;
+    font-size: var(----font-size-m);
     line-height: 27px;
     color: var(--dark-grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-position(center);
 
     &--sm {
       line-height: 24px;
@@ -37,7 +34,7 @@
   }
 
   &__status {
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     line-height: 21px;
     color: var(--grey);
 
@@ -46,7 +43,7 @@
 
 @include mobile {
   .profile__info {
-    font-size: 16px;
+    font-size: var(--text-size-s);
     line-height: 1;
   }
 }

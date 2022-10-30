@@ -1,12 +1,6 @@
 @import "../mixins";
 
 .set-books {
-  &:last-child {
-    // Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.
-    // https://ru.bem.info/methodology/quick-start/#%D0%B1%D0%BB%D0%BE%D0%BA
-    margin-bottom: 40px;
-  }
-
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -22,8 +16,8 @@
 
   &__title {
     @include full(start);
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: var(--text-bold_m);
+    font-size: var(--font-size-l);
     line-height: 36px;
     margin: 0;
     color: var(--dark-grey);
@@ -31,8 +25,8 @@
 
   &__link {
     @include full(end);
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: var(--text-bold_m);
+    font-size: var(--font-size-xs);
     line-height: 21px;
     text-align: right;
     text-transform: uppercase;

@@ -1,18 +1,18 @@
-.feedback {
+@import "../mixins";
 
+.feedback {
   &__info {
-    display: flex;
-    align-items: center;
+    @include flex-position(start)
   }
 
   &__date {
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     line-height: 21px;
     color: var(--placeholder);
   }
 
   &__text {
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     line-height: 25px;
     color: var(--grey);
 

@@ -534,11 +534,9 @@
 }
 .form-label {
   display: block;
-  font-weight: 400;
-  font-size: 14px;
+  font-size: var(--font-size-xs);
   line-height: 21px;
   color: var(--grey);
-  margin-bottom: 5px;
 }
 
 .text-field {
@@ -547,8 +545,8 @@
   height: 60px;
   background: var(--bg);
   border: none;
-  border-radius: 10px;
-  font-size: 18px;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-m);
   line-height: 27px;
   color: var(--dark-grey);
   padding: 15px 20px;
@@ -562,9 +560,9 @@
   width: 100%;
   height: 60px;
   background-color: var(--primary);
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: 18px;
+  border-radius: var(--border-radius-m);
+  font-weight: var(--text-bold_m);
+  font-size: var(--font-size-m);
   line-height: 27px;
   text-align: center;
   border: none;

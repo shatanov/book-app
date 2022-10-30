@@ -359,19 +359,19 @@
 }
 .profile-logo__holder {
   box-sizing: border-box;
-  font-weight: 600;
-  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  font-weight: var(--text-bold_l);
+  font-size: var(--font-size-l);
   line-height: 33px;
   color: var(--white);
   text-transform: uppercase;
   text-align: center;
-  width: 42px;
-  height: 42px;
   border-radius: 50%;
   background: var(--profile-logo);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .profile-logo__holder--hidden {
   display: none;

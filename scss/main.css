@@ -425,26 +425,6 @@
   gap: 30px;
   margin-bottom: 19px;
 }
-.book-info__footnote {
-  font-weight: var(--text-bold_m);
-  font-size: var(--font-size-m);
-  line-height: 27px;
-  color: var(--dark-grey);
-}
-.book-info__footnote--sm {
-  font-size: var(--font-size-s);
-  line-height: 24px;
-}
-.book-info__footnote--addition {
-  font-size: var(--font-size-s);
-  line-height: 24px;
-  color: var(--contrast);
-}
-.book-info__footnote--addition_sm {
-  font-size: var(--font-size-xs);
-  line-height: 21px;
-  color: var(--contrast);
-}
 .book-info__description {
   font-weight: var(--text-bold_m);
   font-size: var(--font-size-m);
@@ -737,6 +717,27 @@
     line-height: 1;
   }
 }
+.footnote {
+  font-weight: var(--text-bold_m);
+  font-size: var(--font-size-m);
+  line-height: 27px;
+  color: var(--dark-grey);
+}
+.footnote--sm {
+  font-size: var(--font-size-s);
+  line-height: 24px;
+}
+.footnote--addition {
+  font-size: var(--font-size-s);
+  line-height: 24px;
+  color: var(--contrast);
+}
+.footnote--addition_sm {
+  font-size: var(--font-size-xs);
+  line-height: 21px;
+  color: var(--contrast);
+}
+
 .spacer {
   flex: 1 1 auto;
 }

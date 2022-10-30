@@ -2,24 +2,22 @@
 
 .search {
   display: none;
-  border-radius: 10px;
+  border-radius: var(--border-radius-m);
   background: var(--bg);
   flex: 2;
 
   &__input {
-    border-radius: 10px;
+    border-radius: var(--border-radius-m);
     background: var(--bg);
     width: 100%;
     box-sizing: border-box;
     border: none;
-    font-size: 18px;
+    font-size: var(--font-size-m);
     line-height: 27px;
     color: var(--dark-grey);
     padding: 15px 20px;
 
     &::placeholder {
-      font-size: 18px;
-      line-height: 27px;
       color: var(--placeholder);
     }
 

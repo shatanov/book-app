@@ -355,19 +355,19 @@
     line-height: 1;
   }
 }
-.book-img--lg img {
+.book-img--lg {
   object-fit: cover;
   width: 140px;
   height: 232px;
   border-radius: var(--border-radius-m);
 }
-.book-img--xl img {
+.book-img--xl {
   object-fit: cover;
   width: 253px;
   height: 392px;
   border-radius: var(--border-radius-m);
 }
-.book-img--sm img {
+.book-img--sm {
   object-fit: cover;
   width: 143px;
   height: 222px;

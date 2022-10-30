@@ -1,15 +1,13 @@
+@import "../mixins";
+
 .button-link {
   box-sizing: border-box;
-  // Вообще, не принятно указывать фиксированную ширину/высоту элементу, из-за того, что это может доставить проблемы с адаптивностью
-  // Вместо этого используют max-width, max-height
   width: 253px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: 16px;
+  @include flex-position(center);
+  border-radius: var(--border-radius-m);
+  font-weight: var(--text-bold_m);
+  font-size: var(--text-size-s);
   line-height: 24px;
   text-align: center;
   color: var(--white);
@@ -21,7 +19,7 @@
     &:hover {
       color: var(--contrast);
       background-color: var(--white);
-      border: 1px solid var(--contrast);
+      @include border(var(--contrast));
     }
   }
 
@@ -31,7 +29,7 @@
     &:hover {
       color: var(--primary);
       background-color: var(--white);
-      border: 1px solid var(--primary);
+      @include border(var(--primary));
     }
 
   }

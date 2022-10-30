@@ -444,9 +444,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: 16px;
+  border-radius: var(--border-radius-m);
+  font-weight: var(--text-bold_m);
+  font-size: var(--text-size-s);
   line-height: 24px;
   text-align: center;
   color: var(--white);
@@ -686,7 +686,7 @@
 }
 .book__name {
   font-weight: var(--text-bold_m);
-  font-size: var(--text-size-m);
+  font-size: var(--font-size-m);
   line-height: 27px;
   color: var(--dark-grey);
   text-decoration: none;
@@ -696,7 +696,7 @@
   text-decoration: underline;
 }
 .book__description {
-  font-size: var(--text-size-xs);
+  font-size: var(--font-size-xs);
   line-height: 21px;
   color: var(--grey);
   text-overflow: ellipsis;
@@ -778,7 +778,7 @@
   --profile-logo: #6E49CB;
   --text-bold_m: 500;
   --text-bold_l: 600;
-  --text-size-m: 18px;
+  --font-size-m: 18px;
   --font-size-xs: 14px;
   --text-size-s: 16px;
   --font-size-l: 24px;

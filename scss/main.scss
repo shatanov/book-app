@@ -6,6 +6,7 @@
 
 
 //Blocks
+@import "./blocks/wrapper";
 @import "./blocks/header";
 @import "./blocks/search-input";
 @import "./blocks/profile-logo";
@@ -21,25 +22,6 @@
 @import "./blocks/book";
 @import "./blocks/genres-block";
 @import "./blocks/set-books";
-
-
-
-
-// Лучше всё же вынести эти классы в новый файл, а этот файл будет содержать только импорты, что-то вроде точки входа получится
-.wrapper {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--white);
-
-  &__header {
-    margin-top: 30px;
-    padding: 0 20px;
-  }
-
-  &__main {
-    margin: 40px 0;
-    padding: 0 20px;
-  }
-}
 
 
 .spacer {

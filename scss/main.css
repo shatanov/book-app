@@ -76,117 +76,6 @@
   text-decoration: underline;
 }
 
-.header {
-  height: 60px;
-}
-.header__wrapper {
-  display: flex;
-  gap: 20px;
-}
-.header__logo {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: start;
-}
-.header__search {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: start;
-}
-.header__account {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: end;
-}
-.header__profile {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: end;
-}
-
-.account__link {
-  font-size: var(--font-size-m);
-  line-height: 27px;
-  text-align: right;
-  color: var(--primary);
-  margin-right: 5px;
-  text-decoration: none;
-}
-.account__link:hover {
-  text-decoration: underline;
-}
-.account__link:last-child {
-  margin-right: 0;
-  margin-left: 5px;
-}
-.account__span {
-  font-size: var(--font-size-m);
-  line-height: 27px;
-  color: #000000;
-}
-
-.set-books {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.set-books__genres {
-  margin-bottom: 30px;
-}
-.set-books__info {
-  display: flex;
-  margin-bottom: 20px;
-}
-.set-books__title {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: start;
-  font-weight: var(--text-bold_m);
-  font-size: var(--font-size-l);
-  line-height: 36px;
-  margin: 0;
-  color: var(--dark-grey);
-}
-.set-books__link {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: end;
-  font-weight: var(--text-bold_m);
-  font-size: var(--font-size-xs);
-  line-height: 21px;
-  text-align: right;
-  text-transform: uppercase;
-  color: var(--primary);
-  text-decoration: none;
-}
-.set-books__link:hover {
-  text-decoration: underline;
-}
-.set-books__wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-}
-@media screen and (min-width: 464px) {
-  .set-books__wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .set-books__title {
-    line-height: 1;
-  }
-  .set-books__link {
-    line-height: 1;
-  }
-}
 .main {
   display: flex;
   flex: 1 1 auto;
@@ -301,6 +190,59 @@
     justify-content: start;
   }
 }
+.header {
+  height: 60px;
+}
+.header__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.header__logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+}
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+}
+.header__account {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+}
+.header__profile {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+}
+
+.account__link {
+  font-size: var(--font-size-m);
+  line-height: 27px;
+  text-align: right;
+  color: var(--primary);
+  margin-right: 5px;
+  text-decoration: none;
+}
+.account__link:hover {
+  text-decoration: underline;
+}
+.account__link:last-child {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.account__span {
+  font-size: var(--font-size-m);
+  line-height: 27px;
+  color: #000000;
+}
+
 .search {
   display: none;
   border-radius: var(--border-radius-m);
@@ -736,6 +678,64 @@
   color: var(--white);
 }
 
+.set-books {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.set-books__genres {
+  margin-bottom: 30px;
+}
+.set-books__info {
+  display: flex;
+  margin-bottom: 20px;
+}
+.set-books__title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+  font-weight: var(--text-bold_m);
+  font-size: var(--font-size-l);
+  line-height: 36px;
+  margin: 0;
+  color: var(--dark-grey);
+}
+.set-books__link {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+  font-weight: var(--text-bold_m);
+  font-size: var(--font-size-xs);
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--primary);
+  text-decoration: none;
+}
+.set-books__link:hover {
+  text-decoration: underline;
+}
+.set-books__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+@media screen and (min-width: 464px) {
+  .set-books__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .set-books__title {
+    line-height: 1;
+  }
+  .set-books__link {
+    line-height: 1;
+  }
+}
 .wrapper {
   font-family: "Poppins", sans-serif;
   background-color: var(--white);

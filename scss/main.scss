@@ -1,11 +1,12 @@
 @import "blocks/logo";
-@import "mixins";
 @import "pages/_registration";
 @import "pages/main-page";
 @import "pages/detailed";
 @import "pages/review";
 
+
 //Blocks
+@import "./blocks/header";
 @import "./blocks/search-input";
 @import "./blocks/profile-logo";
 @import "./blocks/profile";
@@ -19,6 +20,9 @@
 @import "./blocks/rating";
 @import "./blocks/book";
 @import "./blocks/genres-block";
+@import "./blocks/set-books";
+
+
 
 
 // Лучше всё же вынести эти классы в новый файл, а этот файл будет содержать только импорты, что-то вроде точки входа получится

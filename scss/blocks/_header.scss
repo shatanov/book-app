@@ -27,8 +27,7 @@
 
 .account {
   &__link {
-    font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-size-m);
     line-height: 27px;
     text-align: right;
     color: var(--primary);
@@ -45,9 +44,8 @@
     }
   }
 
-
   &__span {
-    font-size: 18px;
+    font-size: var(--font-size-m);
     line-height: 27px;
     color: #000000;
   }

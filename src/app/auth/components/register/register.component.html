@@ -25,7 +25,7 @@
           <input formControlName='passwordConfirm' class='text-field' type='password' required>
         </label>
       </div>
-      <button class='form__btn' type='submit'>Sign up</button>
+      <button class='form__btn' type='submit' [disabled]='isSubmitting$ | async'>Sign up</button>
     </form>
     <div class='registration__text'>
       Already have account?

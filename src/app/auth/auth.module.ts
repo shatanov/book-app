@@ -8,6 +8,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { RegisterComponent } from 'src/app/auth/components/register/register.component';
 import { reducer } from 'src/app/auth/store/reducers';
 import { AuthService } from './services/auth.service';
+import { RegisterEffect } from './store/effects/register.effect';
 
 const routes: Routes = [
   {

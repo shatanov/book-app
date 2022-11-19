@@ -22,11 +22,9 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     ReactiveFormsModule,
-    StoreModule.forFeature('auth', reducer)
     StoreModule.forFeature('auth', reducer),
     EffectsModule.forFeature([RegisterEffect])
   ],
-  declarations: [RegisterComponent]
   declarations: [RegisterComponent],
   providers: [AuthService]
 })

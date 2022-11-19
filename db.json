@@ -5,49 +5,6 @@
       "fullName": "admin",
       "email": "",
       "image": ""
-    },
-    {
-      "user": {
-        "fullName": "",
-        "email": "",
-        "password": "",
-        "passwordConfirm": ""
-      },
-      "id": 2
-    },
-    {
-      "user": {
-        "fullName": "hvn",
-        "email": "gfxg@thcgcgh",
-        "password": "khgjhjh",
-        "passwordConfirm": "bk,ghj"
-      },
-      "id": 3
-    },
-    {
-      "user": {
-        "fullName": "",
-        "email": "",
-        "password": "",
-        "passwordConfirm": ""
-      },
-      "id": 4
-    },
-    {
-      "user": {
-        "fullName": "",
-        "email": "",
-        "password": ""
-      },
-      "id": 5
-    },
-    {
-      "user": {
-        "fullName": "",
-        "email": "",
-        "password": ""
-      },
-      "id": 6
     }
   ]
 }

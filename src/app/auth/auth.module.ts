@@ -9,6 +9,7 @@ import { RegisterComponent } from 'src/app/auth/components/register/register.com
 import { reducer } from 'src/app/auth/store/reducers';
 import { AuthService } from './services/auth.service';
 import { RegisterEffect } from './store/effects/register.effect';
+import { MainLogoModule } from '../shared/modules/mainLogo/mainLogo.module';
 
 const routes: Routes = [
   {
@@ -23,7 +24,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ReactiveFormsModule,
     StoreModule.forFeature('auth', reducer),
-    EffectsModule.forFeature([RegisterEffect])
+    EffectsModule.forFeature([RegisterEffect]),
+    MainLogoModule
   ],
   declarations: [RegisterComponent],
   providers: [AuthService]

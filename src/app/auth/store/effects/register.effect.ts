@@ -21,6 +21,6 @@ export class RegisterEffect {
       );
     })
   ));
-
+ // TODO catchError don`t work
   constructor(private actions$: Actions, private authService: AuthService) {}
 }

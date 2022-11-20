@@ -33,6 +33,7 @@ export class RegisterComponent implements OnInit {
 
   initializeForm(): void {
     this.form = this.fb.group({
+      // TODO Работает ли валидация?
       fullName: ['', Validators.required],
       email: ['', Validators.email],
       password: ['', Validators.required],

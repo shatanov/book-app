@@ -5,6 +5,7 @@ import { catchError, switchMap, map, of } from 'rxjs';
 import { registerAction, registerFailureAction, registerSuccsesAction } from '../actions/register.action';
 import { AuthService } from '../../services/auth.service';
 import { CurrentUserInterface } from '../../../shared/types/currentUser.interface';
+import { PersistanceService } from '../../../shared/services/persistance.service';
 
 @Injectable()
 export class RegisterEffect {
@@ -13,6 +14,7 @@ export class RegisterEffect {
     switchMap(({ request }) => {
       return this.authService.register(request).pipe(
         map((currentUser: CurrentUserInterface) => {
+          this.persistanceService.set("tokenName", currentUser.fullName) // Используем имя за место JWT токена
           return registerSuccsesAction({ currentUser });
         }),
         catchError(() => {
@@ -21,6 +23,8 @@ export class RegisterEffect {
       );
     })
   ));
- // TODO catchError don`t work
-  constructor(private actions$: Actions, private authService: AuthService) {}
+
+  // TODO catchError don`t work
+  constructor(private actions$: Actions, private authService: AuthService,
+              private persistanceService: PersistanceService) {}
 }

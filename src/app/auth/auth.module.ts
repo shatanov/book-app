@@ -10,6 +10,7 @@ import { reducer } from 'src/app/auth/store/reducers';
 import { AuthService } from './services/auth.service';
 import { RegisterEffect } from './store/effects/register.effect';
 import { MainLogoModule } from '../shared/modules/mainLogo/mainLogo.module';
+import { PersistanceService } from '../shared/services/persistance.service';
 
 const routes: Routes = [
   {
@@ -28,7 +29,7 @@ const routes: Routes = [
     MainLogoModule
   ],
   declarations: [RegisterComponent],
-  providers: [AuthService]
+  providers: [AuthService, PersistanceService]
 })
 export class AuthModule {
 }

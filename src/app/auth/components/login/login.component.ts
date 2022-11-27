@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
     const request: LoginRequestInterface = {
       user: this.form.value
     };
+    // TODO не отрабатывает апи
     this.store.dispatch(loginAction({ request }));
   }
 

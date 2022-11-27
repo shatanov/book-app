@@ -23,7 +23,7 @@ export class AuthService {
   }
 
   login(data: RegisterRequestInterface): Observable<CurrentUserInterface> {
-    const url = environment.apiUrl + '/users/login';
+    const url = environment.apiUrl + '/login';
 
     return this.http.post<AuthResponseInterface>(url, data).pipe(map(this.getUser));
   }

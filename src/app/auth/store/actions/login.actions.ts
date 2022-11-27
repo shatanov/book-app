@@ -9,7 +9,7 @@ export const loginAction = createAction(
   props<{request: LoginRequestInterface}>()
 );
 
-export const registerLoginAction = createAction(
+export const loginSuccesAction = createAction(
   ActionTypes.LOGIN_SUCCSES,
   props<{currentUser: CurrentUserInterface}>()
 );

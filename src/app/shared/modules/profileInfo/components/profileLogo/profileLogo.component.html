@@ -1,4 +1,4 @@
 <div class="profile-logo">
-  <img [src]='imgUrlProps' [ngClass]={'profile-logo__img--hidden':hasImgProps} alt="" class="profile-logo__img">
+  <img *ngIf='hasImgProps' alt="" class="profile-logo__img" [src]='imgUrlProps' >
   <div class="profile-logo__holder">{{profileName}}</div>
 </div>

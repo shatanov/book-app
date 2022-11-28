@@ -6,15 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./profileLogo.component.scss']
 })
 export class ProfileLogoComponent implements OnInit {
-  @Input('imgUrl') imgUrlProps: string;
-  @Input('hasImg') hasImgProps: boolean;
-  @Input('profileName') profileNameProps: string;
+  @Input('imgUrl') imgUrlProps: string | null | undefined;
+  @Input('hasImg') hasImgProps: string | null | undefined;
+  @Input('profileName') profileNameProps: string | undefined;
 
-  public profileName: string;
+  public profileName: string | undefined;
 
   ngOnInit(): void {
     if (!this.hasImgProps) {
-      this.profileName = this.profileNameProps.substring(0, 1);
+      this.profileName = this.profileNameProps?.substring(0, 1);
     }
   }
 }

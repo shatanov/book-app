@@ -5,11 +5,8 @@
       <div class="header__logo">
         <app-main-logo logoSize='small'></app-main-logo>
       </div>
-      <div class="header__search search">
-        <input type="text" class="search__input" placeholder="Search your books ">
-        <button class="search__icon" type="button">
-          <span class="material-symbols-outlined">search</span>
-        </button>
+      <div class="header__search">
+        <app-search-input></app-search-input>
       </div>
       <ng-container *ngIf='!(isLoggedIn$ | async)'>
         <div class="header__account account">

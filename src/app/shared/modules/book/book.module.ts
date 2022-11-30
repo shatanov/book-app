@@ -1,24 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 
 import { BookImgComponent } from './componets/bookImg/bookImg.component';
 import { BookInfoComponent } from './componets/bookInfo/bookInfo.component';
 import { BookFootnoteModule } from '../footnote/bookFootnote.module';
-import { GetBookEffect } from './store/effects/getBook.effect';
-import { StoreModule } from '@ngrx/store';
-import { reducer } from './store/reducers';
-import { BookService } from './service/book.service';
+import { BookComponent } from './componets/book/book.component';
+
 
 
 @NgModule({
   imports: [CommonModule,
-    BookFootnoteModule,
-    EffectsModule.forFeature([GetBookEffect]),
-    StoreModule.forFeature('feat', reducer)
+    BookFootnoteModule
   ],
-  declarations: [BookImgComponent, BookInfoComponent],
-  exports: [BookImgComponent, BookInfoComponent],
-  providers: [BookService]
+  declarations: [BookImgComponent, BookInfoComponent, BookComponent],
+  exports: [BookImgComponent, BookInfoComponent, BookComponent],
 })
 export class BookModule {}

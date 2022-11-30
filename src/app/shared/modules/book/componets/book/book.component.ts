@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
 
+import { BookInterface } from '../../../../types/book.interface';
+
 @Component({
-  selector: 'app-book-info',
-  templateUrl: './bookInfo.component.html',
-  styleUrls: ['./bookInfo.component.scss']
+  selector: 'app-book',
+  templateUrl: './book.component.html',
+  styleUrls: ['./book.component.scss']
 })
-export class BookInfoComponent {
-  @Input('book') bookProps: object
+export class BookComponent {
+  @Input('book') bookProps: BookInterface
 }

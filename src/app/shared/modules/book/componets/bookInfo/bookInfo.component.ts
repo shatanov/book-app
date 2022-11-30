@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./bookInfo.component.scss']
 })
 export class BookInfoComponent {
-  @Input('book') bookProps: object
+  @Input('bookInfo') bookProps: object
 }

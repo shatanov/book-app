@@ -1,0 +1,18 @@
+<app-top-bar></app-top-bar>
+<main class="main wrapper__main">
+  <section class="set-books">
+    <div class="container">
+      <div class="set-books__info">
+        <h2 class="set-books__title">{{bookData.title | titlecase}}</h2>
+        <div class="spacer"></div>
+        <a href="" class="set-books__link" *ngIf='bookData.books.length > MAX_BOOKS_SET_LENGTH'>More</a>
+      </div>
+      <div class="set-books__wrapper">
+        <ng-container *ngFor='let book of bookData.books'>
+          <app-book [book]='book'></app-book>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+</main>
+

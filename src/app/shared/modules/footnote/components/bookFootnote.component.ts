@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-book-footnote',
+  selector: 'app-bookSet-footnote',
   templateUrl: './bookFootnote.component.html',
   styleUrls: ['./bookFootnote.component.scss']
 })

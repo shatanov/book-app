@@ -8,7 +8,7 @@ import { BookInterface } from '../../../shared/types/book.interface';
   styleUrls: ['./bookSet.component.scss']
 })
 export class BookSetComponent implements OnInit {
-  MAX_BOOKS_SET_LENGTH = 0;
+  MAX_BOOKS_SET_LENGTH = 4;
   booksList: BookInterface[];
 
   constructor(private store: Store) {}
@@ -19,8 +19,10 @@ export class BookSetComponent implements OnInit {
     'books': [
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -38,8 +40,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -57,8 +61,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -76,8 +82,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -95,8 +103,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -114,8 +124,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -133,8 +145,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -152,8 +166,10 @@ export class BookSetComponent implements OnInit {
       },
       {
         'name': 'BOOK',
-        'decsription': 'dvsdvsdvsdvsdvs',
-        'imgUrl': 'http://zoozel.ru/gallery/images/1450476_spat-hochetsya-chehov.jpg',
+        'decsription': ' Тамила Ассандер - последняя представительница правящей династии Гарета.' +
+          ' Единственная, в чьей крови еще сохранились ' +
+          'крохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ',
+        'imgUrl': 'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg',
         'footnotes': [
           {
             'name': 'svds',
@@ -168,12 +184,12 @@ export class BookSetComponent implements OnInit {
             'status': false
           }
         ]
-      }
+      },
     ]
   };
 
-  getReducedBooksSet(): BookInterface[] {
-    return this.bookData.books.slice(this.MAX_BOOKS_SET_LENGTH, -1);
+  getReducedBooksSet(): void {
+    this.booksList = this.bookData.books.slice(-(this.MAX_BOOKS_SET_LENGTH));
   }
 
   ngOnInit(): void {

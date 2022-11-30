@@ -8,8 +8,8 @@
         <a href="" class="set-books__link" *ngIf='bookData.books.length > MAX_BOOKS_SET_LENGTH'>More</a>
       </div>
       <div class="set-books__wrapper">
-        <ng-container *ngFor='let book of bookData.books'>
-          <app-book [book]='book'></app-book>
+        <ng-container *ngFor='let book of booksList'>
+          <div><app-book [book]='book'></app-book></div>
         </ng-container>
       </div>
     </div>

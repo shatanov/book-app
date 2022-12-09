@@ -1,10 +1,204 @@
 {
-  "user": [
+  "categories": [
+    {
+      "id": 1,
+      "title": "pop",
+      "books": [
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "pop1",
+      "books": [
+        {
+          "name": "BOOK1",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 2.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK1",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 4.0,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        },
+        {
+          "name": "BOOK",
+          "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+          "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+          "rating": 3.2,
+          "footnotes": [
+            {
+              "name": "svds",
+              "status": true
+            },
+            {
+              "name": "svds",
+              "status": false
+            },
+            {
+              "name": "svds",
+              "status": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
     {
       "id": 1,
       "fullName": "admin",
-      "email": "",
-      "image": ""
+      "email": "admin@",
+      "password": "12231"
     }
   ]
 }

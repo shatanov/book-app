@@ -1,0 +1,93 @@
+<template>
+    <div class="book">
+        <div>
+            <img
+                class="book-img book-img--lg"
+                :src="book.imgUrl"
+                alt="book"
+            />
+        </div>
+        <div class="book__info">
+            <a href="#" class="book__name">{{book.name}}</a>
+            <div class="book__description">
+                {{book.decsription}}
+            </div>
+            <div class="book__score">
+                <book-score :score="book.rating" :active="false"></book-score>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+
+import BookScore from "./BookScore.vue"
+
+export default defineComponent({
+    components : {
+        BookScore,
+    },
+    props: {
+        book: {
+            type: Object,
+            required: true,
+        }
+    }
+})
+</script>
+
+
+<style scoped lang="scss">
+@import "../styles/main.scss";
+.book {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__score {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    &__name {
+        font-weight: var(--text-bold_m);
+        font-size: var(--font-size-m);
+        line-height: 27px;
+        color: var(--dark-grey);
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__description {
+        font-size: var(--font-size-xs);
+        line-height: 21px;
+        color: var(--grey);
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@include mobile-s {
+    .book {
+        flex-wrap: nowrap;
+
+        &__name {
+            text-align: left;
+        }
+    }
+}
+</style>

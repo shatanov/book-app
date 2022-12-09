@@ -1,9 +1,0 @@
-<div class='profile'>
-  <a href='' class='profile__link'>
-    <app-profile-logo [hasImg]='(currentUser$ | async)?.image'
-                      [imgUrl]='(currentUser$ | async)?.image'
-                      [profileName]='(currentUser$ | async)?.fullName?.trim()'>
-    </app-profile-logo>
-    <div class='profile__info'>{{(currentUser$ | async)?.fullName}}</div>
-  </a>
-</div>

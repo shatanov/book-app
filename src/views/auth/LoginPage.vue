@@ -1,21 +1,11 @@
 <template>
-    <main class="main-registration">
+    <main class="main-registration login">
         <div class="registration">
             <div class="registration__logo">
                 <main-logo :size="'lg'"></main-logo>
             </div>
             <form action="" class="registration__form form">
                 <div class="registration__inputs">
-                    <label>
-                        <span class="form-label">Full name</span>
-                        <input
-                            v-model="user.fullName"
-                            class="text-field"
-                            type="text"
-                            placeholder="Ivan Ivanovich"
-                            required
-                        />
-                    </label>
                     <label>
                         <span class="form-label">Email</span>
                         <input
@@ -35,29 +25,16 @@
                             required
                         />
                     </label>
-                    <label>
-                        <span class="form-label">Password confirm</span>
-                        <input
-                            @input="checkConfirmPassword($event)"
-                            class="text-field"
-                            type="password"
-                            required
-                        />
-                    </label>
-                    <div v-if="passwordConfirm.value">Errror)</div>
                 </div>
-                <button class="form__btn" type="submit" @click="submit()">Sign up</button>
+                <button @click="submit()" class="form__btn" type="submit">Log in</button>
             </form>
             <div class="registration__text">
-                Already have account?
-                <router-link to="/login" class="registration__text--link">
-                    Login</router-link
-                >
+                No account?
+                <router-link to="/register" class="registration__text--link"> Create</router-link>
             </div>
         </div>
     </main>
 </template>
-
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
 import { reactive, ref } from "@vue/reactivity";
@@ -65,7 +42,6 @@ import { reactive, ref } from "@vue/reactivity";
 import { IUserAuth } from "../../types/userAuth.interface";
 import MainLogo from "../../components/MainLogo.vue";
 
-import { userService } from "../../services/user.service"
 import { useStore } from "vuex";
 
 export default defineComponent({
@@ -75,25 +51,16 @@ export default defineComponent({
     },
     setup() {
         const store = useStore();
-        let passwordConfirm = ref(false);
         const user: IUserAuth = reactive({
-            fullName: "",
             email: "",
             password: "",
         });
 
-        const checkConfirmPassword = (event: any) => {
-            const pass:string = event.target.value;
-            if(pass != user.password) {
-                passwordConfirm.value = true;
-            }
+        const submit = () => {
+            store.dispatch("loginUser", user);
         };
 
-        const submit = () => {
-            store.dispatch('registerUser', user)
-        }
-
-        return { user, checkConfirmPassword, passwordConfirm, submit };
+        return { user, submit };
     },
 });
 </script>

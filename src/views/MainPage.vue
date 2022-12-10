@@ -3,7 +3,7 @@
     <main class="main wrapper__main">
         <set-books
             v-for="category in categories"
-            :key="category?.id"
+            :key="category.id"
             :category="category"
         ></set-books>
     </main>
@@ -13,10 +13,13 @@ import { defineComponent } from "@vue/composition-api";
 
 import TopBar from "../components/TopBar.vue";
 import SetBooks from "../components/SetBooks.vue";
-import { service } from "../services/service";
-import { onMounted, ref } from "@vue/runtime-core";
 
-import { IBookCategories } from "../types/bookCategories.interface";
+import { onMounted } from "@vue/runtime-core";
+
+import { useStore } from "vuex";
+import { computed } from "vue";
+
+import { IBookCategories } from "../types/bookCategories.interface"
 
 export default defineComponent({
     components: {
@@ -24,12 +27,11 @@ export default defineComponent({
         SetBooks,
     },
     setup() {
-        let categories =  ref<IBookCategories>();
+        const categories = computed<IBookCategories[]>(() => store.state.allCategories)
+        const store = useStore();
 
         onMounted(() => {
-            service
-                .getAllCategories()
-                .then((data) => (categories.value = data));
+            store.dispatch("getAllCategories")
         });
 
         return { categories };

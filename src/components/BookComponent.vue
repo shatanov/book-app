@@ -1,11 +1,7 @@
 <template>
     <div class="book">
         <div>
-            <img
-                class="book-img book-img--lg"
-                :src="book.imgUrl"
-                alt="book"
-            />
+            <book-img :imgUrl="book.imgUrl" :size="'lg'"/>
         </div>
         <div class="book__info">
             <a href="#" class="book__name">{{book.name}}</a>
@@ -23,10 +19,12 @@
 import { defineComponent } from '@vue/composition-api'
 
 import BookScore from "./BookScore.vue"
+import BookImg from "./BookImg.vue"
 
 export default defineComponent({
     components : {
         BookScore,
+        BookImg,
     },
     props: {
         book: {

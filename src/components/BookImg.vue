@@ -14,7 +14,7 @@ import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
     props: {
         size: {
-            type: Boolean,
+            type: String,
             required: true
         },
 

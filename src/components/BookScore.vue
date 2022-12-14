@@ -54,13 +54,13 @@ export default defineComponent({
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
         }
 
-        &:hover > .material-symbols-rounded {
-            font-variation-settings: "FILL" 1;
-        }
+        // &:hover > .material-symbols-rounded {
+        //     font-variation-settings: "FILL" 1;
+        // }
 
-        &:hover ~ .score__star .material-symbols-rounded {
-            font-variation-settings: "FILL" 1;
-        }
+        // &:hover ~ .score__star .material-symbols-rounded {
+        //     font-variation-settings: "FILL" 1;
+        // }
 
         &--active > .material-symbols-rounded {
             font-variation-settings: "FILL" 1;

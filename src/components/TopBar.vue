@@ -5,20 +5,17 @@
                 <div class="header__logo">
                     <main-logo :size="'sm'"></main-logo>
                 </div>
-                <div class="header__search search">
-                    <input
-                        type="text"
-                        class="search__input"
-                        placeholder="Search your books "
-                    />
-                    <button class="search__icon" type="button">
-                        <span class="material-symbols-outlined">search</span>
-                    </button>
+                <div class="header__search">
+                    <topbar-search />
                 </div>
                 <div class="header__account account" v-if="!isLogged">
-                    <router-link to="/login" class="account__link">Login</router-link>
+                    <router-link to="/login" class="account__link"
+                        >Login</router-link
+                    >
                     <span class="account__span">/ </span>
-                    <router-link to="/register" class="account__link">Signup</router-link>
+                    <router-link to="/register" class="account__link"
+                        >Signup</router-link
+                    >
                 </div>
                 <div class="header__profile" v-if="isLogged">
                     <profile-component />
@@ -35,11 +32,13 @@ import { computed } from "vue";
 
 import MainLogo from "./MainLogo.vue";
 import ProfileComponent from "./ProfileComponent.vue";
+import TopbarSearch from "./TopbarSearch.vue";
 
 export default defineComponent({
     components: {
         MainLogo,
         ProfileComponent,
+        TopbarSearch,
     },
 
     setup() {
@@ -47,9 +46,8 @@ export default defineComponent({
 
         const isLogged = computed(() => store.state.loggedIn);
 
-        return { isLogged }
-    }
-
+        return { isLogged };
+    },
 });
 </script>
 

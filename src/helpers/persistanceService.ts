@@ -6,12 +6,11 @@ export const set = (key: string, data: any) => {
     }
 };
 
-// export const get = (key: string) => {
-//     try {
-//         @ts-ignore
-//         return JSON.parse(localStorage.getItem(key));
-//     } catch (e) {
-//         console.error("Error gating from LocalStorage", e);
-//         return null;
-//     }
-// };
+export const get = (key: string) => {
+    try {
+        return JSON.parse(localStorage.getItem(key) || '{}');
+    } catch (e) {
+        console.error("Error gating from LocalStorage", e);
+        return null;
+    }
+};

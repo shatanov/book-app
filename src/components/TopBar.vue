@@ -8,7 +8,7 @@
                 <div class="header__search">
                     <topbar-search />
                 </div>
-                <div class="header__account account" v-if="!isLogged">
+                <div class="header__account account" v-if="!user().email">
                     <router-link to="/login" class="account__link"
                         >Login</router-link
                     >
@@ -17,8 +17,8 @@
                         >Signup</router-link
                     >
                 </div>
-                <div class="header__profile" v-if="isLogged">
-                    <profile-component />
+                <div class="header__profile" v-if="user().email">
+                    <profile-component :user="user()"/>
                 </div>
             </div>
         </div>
@@ -27,12 +27,13 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { useStore } from "vuex";
 import { computed } from "vue";
 
 import MainLogo from "./MainLogo.vue";
 import ProfileComponent from "./ProfileComponent.vue";
 import TopbarSearch from "./TopbarSearch.vue";
+import { get } from "../helpers/persistanceService";
+import { IUser } from "@/types/user.interface";
 
 export default defineComponent({
     components: {
@@ -42,11 +43,9 @@ export default defineComponent({
     },
 
     setup() {
-        const store = useStore();
+        const user = ():IUser => get("user");
 
-        const isLogged = computed(() => store.state.loggedIn);
-
-        return { isLogged };
+        return { user };
     },
 });
 </script>

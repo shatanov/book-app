@@ -208,15 +208,5 @@
       "image": null,
       "id": 2
     }
-  ],
-  "loginUser": [
-    {
-      "id": 1,
-      "email": "admin@u",
-      "password": "123",
-      "fullName": "admin",
-      "image": null,
-      "token": "vsdvs"
-    }
   ]
 }

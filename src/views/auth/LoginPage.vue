@@ -28,6 +28,7 @@
                 </div>
                 <button class="form__btn">Log in</button>
             </form>
+            <div class="" v-if="logginFailure()">Error</div>
             <div class="registration__text">
                 No account?
                 <router-link to="/register" class="registration__text--link"> Create</router-link>
@@ -39,6 +40,7 @@
 import { defineComponent } from "@vue/composition-api";
 import { reactive } from "@vue/reactivity";
 import { useStore } from "vuex";
+import { watch } from "vue";
 
 import { IUser } from "../../types/user.interface";
 import MainLogo from "../../components/MainLogo.vue";
@@ -56,11 +58,16 @@ export default defineComponent({
             image: null,
         });
 
+        const cancelingError = () => store.dispatch("loginErrorsCanceling");
+
+        watch(user, cancelingError);
+
+        const logginFailure = () => store.getters.loginFail;
         const submit = () => {
            store.dispatch("loginUser", user);
         };
 
-        return { user, submit };
+        return { user, submit, logginFailure };
     },
 });
 </script>

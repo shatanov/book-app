@@ -7,12 +7,21 @@ import { IBookCategories } from "../types/bookCategories.interface";
 import { userService } from "../services/user.service";
 import { service } from "../services/service";
 
-
 export default createStore({
     state: {
         user: <IUser | null>{},
         loggedIn: <boolean>false,
+        loginFail: <boolean>false,
         allCategories: <IBookCategories>{},
+    },
+
+    getters: {
+        user: state => {
+            return state.user;
+        },
+        loginFail: state => {
+            return state.loginFail;
+        }
     },
 
     mutations: {
@@ -20,9 +29,12 @@ export default createStore({
             state.user = user;
             state.loggedIn = true;
         },
+        loginErrors(state, status:boolean) {
+            state.loginFail = status;
+        },
         getAllCategoriesSuccess(state, allCategories: IBookCategories) {
-          state.allCategories = allCategories;
-        }
+            state.allCategories = allCategories;
+        },
     },
 
     actions: {
@@ -32,15 +44,22 @@ export default createStore({
             });
         },
         loginUser({ commit }, authUser: IUser) {
-            userService.loginUser(authUser)
-            .then((data: IUser[]) => {
+            userService.loginUser(authUser).then((data: IUser[]) => {
+                if (data === undefined) {
+                    commit("loginErrors", true);
+                    return;
+                }
                 commit("loginSuccess", data);
                 router.push("/");
-            })
-            .catch(err => console.log(err));
+            });
         },
-        getAllCategories({ commit }){
-          service.getAllCategories().then((data:any) => commit("getAllCategoriesSuccess", data));
-        }
+        loginErrorsCanceling({ commit }){
+            commit("loginErrors", false);
+        },
+        getAllCategories({ commit }) {
+            service
+                .getAllCategories()
+                .then((data: any) => commit("getAllCategoriesSuccess", data));
+        },
     },
 });

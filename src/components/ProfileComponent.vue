@@ -2,31 +2,28 @@
     <div class="profile">
         <router-link to="/" class="profile__link">
             <profile-logo
-                :profile-img="user().image || ''"
-                :profile-name="user().fullName || ''"
+                :profile-img="user.image || ''"
+                :profile-name="user.fullName || ''"
             />
-            <div class="profile__info">{{ user().fullName || ''}}</div>
+            <div class="profile__info">{{ user.fullName || "" }}</div>
         </router-link>
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { useStore } from "vuex";
 
 import ProfileLogo from "./ProfileLogo.vue";
-import { IUser } from "../types/user.interface";
 
 export default defineComponent({
+    props: {
+        user: {
+            type: Object,
+            required: true,
+        }
+    },
     components: {
         ProfileLogo,
-    },
-    setup() {
-        const store = useStore();
-
-        const user = ():IUser => store.getters.user;
-
-        return { user };
     },
 });
 </script>

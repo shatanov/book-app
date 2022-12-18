@@ -27,9 +27,10 @@ export default defineComponent({
         SetBooks,
     },
     setup() {
-        const categories = computed<IBookCategories[]>(() => store.state.allCategories)
         const store = useStore();
 
+        const categories = computed<IBookCategories[]>(() => store.state.allCategories)
+        
         onMounted(() => {
             store.dispatch("getAllCategories")
         });

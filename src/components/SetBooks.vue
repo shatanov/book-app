@@ -41,7 +41,7 @@ export default defineComponent({
         },
     },
     setup(props) {
-        const MAX_BOOK_COMPONENTS_LENGTH = ref(4);
+        const MAX_BOOK_COMPONENTS_LENGTH = ref<number>(4);
         const { category } = toRefs(props);
 
         const getBooksLength = () => category.value.books.length;

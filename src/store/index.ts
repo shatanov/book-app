@@ -6,30 +6,22 @@ import { IBookCategories } from "../types/bookCategories.interface";
 
 import { userService } from "../services/user.service";
 import { service } from "../services/service";
+import { set } from "../helpers/persistanceService";
 
 export default createStore({
     state: {
-        user: <IUser | null>{},
-        loggedIn: <boolean>false,
         loginFail: <boolean>false,
         allCategories: <IBookCategories>{},
     },
 
     getters: {
-        user: state => {
-            return state.user;
-        },
-        loginFail: state => {
+        loginFail: (state) => {
             return state.loginFail;
-        }
+        },
     },
 
     mutations: {
-        loginSuccess(state, user: IUser) {
-            state.user = user;
-            state.loggedIn = true;
-        },
-        loginErrors(state, status:boolean) {
+        loginErrors(state, status: boolean) {
             state.loginFail = status;
         },
         getAllCategoriesSuccess(state, allCategories: IBookCategories) {
@@ -49,11 +41,11 @@ export default createStore({
                     commit("loginErrors", true);
                     return;
                 }
-                commit("loginSuccess", data);
+                set("user", data);
                 router.push("/");
             });
         },
-        loginErrorsCanceling({ commit }){
+        loginErrorsCanceling({ commit }) {
             commit("loginErrors", false);
         },
         getAllCategories({ commit }) {

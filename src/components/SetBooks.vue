@@ -4,12 +4,11 @@
             <div class="set-books__info">
                 <h2 class="set-books__title">{{ category.title }}</h2>
                 <div class="spacer"></div>
-                <a
-                    href=""
+                <div
                     class="set-books__link"
                     v-if="getBooksLength() >= MAX_BOOK_COMPONENTS_LENGTH"
-                    >More</a
-                >
+                    @click="MAX_BOOK_COMPONENTS_LENGTH+=4"
+                    >More</div>
             </div>
             <div class="set-books__wrapper">
                 <book-component
@@ -27,7 +26,7 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { toRefs } from "@vue/reactivity";
+import { toRefs, ref } from "@vue/reactivity";
 
 import BookComponent from "./BookComponent.vue";
 
@@ -42,7 +41,7 @@ export default defineComponent({
         },
     },
     setup(props) {
-        const MAX_BOOK_COMPONENTS_LENGTH = 4;
+        const MAX_BOOK_COMPONENTS_LENGTH = ref(4);
         const { category } = toRefs(props);
 
         const getBooksLength = () => category.value.books.length;
@@ -86,6 +85,7 @@ export default defineComponent({
         text-transform: uppercase;
         color: var(--primary);
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
             text-decoration: underline;

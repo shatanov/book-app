@@ -30,6 +30,7 @@
                         <span class="form-label">Password</span>
                         <input
                             v-model="user.password"
+                            @input="checkConfirmPassword()"
                             class="text-field"
                             type="password"
                             required
@@ -38,16 +39,17 @@
                     <label>
                         <span class="form-label">Password confirm</span>
                         <input
-                            @input="checkConfirmPassword($event)"
+                            v-model="confirmPassword"
+                            @input="checkConfirmPassword()"
                             class="text-field"
                             type="password"
                             required
                         />
                     </label>
-                    <div v-if="passwordConfirm.value">Errror)</div>
                 </div>
                 <button class="form__btn" type="submit">Sign up</button>
             </form>
+            <div v-show="passwordConfirm">Пароли не совпадают</div>
             <div class="registration__text">
                 Already have account?
                 <router-link to="/login" class="registration__text--link">
@@ -65,7 +67,7 @@ import { reactive, ref } from "@vue/reactivity";
 import { IUser } from "../../types/user.interface";
 import MainLogo from "../../components/MainLogo.vue";
 
-import { userService } from "../../services/user.service"
+import { userService } from "../../services/user.service";
 import { useStore } from "vuex";
 
 export default defineComponent({
@@ -75,7 +77,10 @@ export default defineComponent({
     },
     setup() {
         const store = useStore();
-        let passwordConfirm = ref(false);
+
+        const passwordConfirm = ref(false);
+        const confirmPassword = ref("");
+
         const user: IUser = reactive({
             fullName: "",
             email: "",
@@ -83,18 +88,19 @@ export default defineComponent({
             image: null,
         });
 
-        const checkConfirmPassword = (event: any) => {
-            const pass:string = event.target.value;
-            if(pass != user.password) {
+        const checkConfirmPassword = () => {
+            if (confirmPassword.value != user.password) {
                 passwordConfirm.value = true;
+                return;
             }
+            passwordConfirm.value = false;
         };
 
         const submit = () => {
-            store.dispatch('registerUser', user)
-        }
+            store.dispatch("registerUser", user);
+        };
 
-        return { user, checkConfirmPassword, passwordConfirm, submit };
+        return { user, checkConfirmPassword, passwordConfirm, submit, confirmPassword };
     },
 });
 </script>

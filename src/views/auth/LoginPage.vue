@@ -4,7 +4,7 @@
             <div class="registration__logo">
                 <main-logo :size="'lg'"></main-logo>
             </div>
-            <form action="" class="registration__form form">
+            <form class="registration__form form" @submit.prevent="submit()">
                 <div class="registration__inputs">
                     <label>
                         <span class="form-label">Email</span>
@@ -26,7 +26,7 @@
                         />
                     </label>
                 </div>
-                <button @click="submit()" class="form__btn" type="submit">Log in</button>
+                <button class="form__btn">Log in</button>
             </form>
             <div class="registration__text">
                 No account?
@@ -37,12 +37,11 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { reactive, ref } from "@vue/reactivity";
-
-import { IUserAuth } from "../../types/userAuth.interface";
-import MainLogo from "../../components/MainLogo.vue";
-
+import { reactive } from "@vue/reactivity";
 import { useStore } from "vuex";
+
+import { IUser } from "../../types/user.interface";
+import MainLogo from "../../components/MainLogo.vue";
 
 export default defineComponent({
     components: { MainLogo },
@@ -51,13 +50,14 @@ export default defineComponent({
     },
     setup() {
         const store = useStore();
-        const user: IUserAuth = reactive({
+        const user: IUser = reactive({
             email: "",
             password: "",
+            image: null,
         });
 
         const submit = () => {
-            store.dispatch("loginUser", user);
+           store.dispatch("loginUser", user);
         };
 
         return { user, submit };

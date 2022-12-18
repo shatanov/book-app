@@ -4,7 +4,7 @@
             <div class="registration__logo">
                 <main-logo :size="'lg'"></main-logo>
             </div>
-            <form action="" class="registration__form form">
+            <form @submit.prevent="submit()" class="registration__form form">
                 <div class="registration__inputs">
                     <label>
                         <span class="form-label">Full name</span>
@@ -46,7 +46,7 @@
                     </label>
                     <div v-if="passwordConfirm.value">Errror)</div>
                 </div>
-                <button class="form__btn" type="submit" @click="submit()">Sign up</button>
+                <button class="form__btn" type="submit">Sign up</button>
             </form>
             <div class="registration__text">
                 Already have account?
@@ -62,7 +62,7 @@
 import { defineComponent } from "@vue/composition-api";
 import { reactive, ref } from "@vue/reactivity";
 
-import { IUserAuth } from "../../types/userAuth.interface";
+import { IUser } from "../../types/user.interface";
 import MainLogo from "../../components/MainLogo.vue";
 
 import { userService } from "../../services/user.service"
@@ -76,10 +76,11 @@ export default defineComponent({
     setup() {
         const store = useStore();
         let passwordConfirm = ref(false);
-        const user: IUserAuth = reactive({
+        const user: IUser = reactive({
             fullName: "",
             email: "",
             password: "",
+            image: null,
         });
 
         const checkConfirmPassword = (event: any) => {

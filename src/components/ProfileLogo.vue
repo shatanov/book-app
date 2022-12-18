@@ -8,7 +8,7 @@
                 'profile-logo__img--hidden': profileImg == '',
             }"
         />
-        <div class="profile-logo__holder">{{ holderSymbol() }}</div>
+        <div v-if="profileImg == ''" class="profile-logo__holder">{{ holderSymbol() }}</div>
     </div>
 </template>
 

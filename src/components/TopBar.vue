@@ -15,40 +15,43 @@
                         <span class="material-symbols-outlined">search</span>
                     </button>
                 </div>
-                <!--        Блок регистрации для страницы при условии что пользователь не зарегистрирован        -->
-                <!--                    <div class="header__account account">-->
-                <!--                        <a href="" class="account__link">Login</a>-->
-                <!--                        <span class="account__span">/ </span>-->
-                <!--                        <a href="" class="account__link">Signup</a>-->
-                <!--                    </div>-->
-                <div class="header__profile profile">
-                    <a href="" class="profile__link">
-                        <div class="profile-logo">
-                            <img
-                                src=""
-                                alt=""
-                                class="profile-logo__img profile-logo__img--hidden"
-                            />
-                            <div class="profile-logo__holder">а</div>
-                        </div>
-                        <div class="profile__info">Andery Vilkelm</div>
-                    </a>
+                <div class="header__account account" v-if="!isLogged">
+                    <router-link to="/login" class="account__link">Login</router-link>
+                    <span class="account__span">/ </span>
+                    <router-link to="/register" class="account__link">Signup</router-link>
+                </div>
+                <div class="header__profile" v-if="isLogged">
+                    <profile-component />
                 </div>
             </div>
         </div>
     </header>
 </template>
 
-<script>
-import { defineComponent } from '@vue/composition-api';
-import MainLogo from './MainLogo.vue';
-export default defineComponent({
-  components: {
-    MainLogo,
-  }
-})
-</script>
+<script lang="ts">
+import { defineComponent } from "@vue/composition-api";
+import { useStore } from "vuex";
+import { computed } from "vue";
 
+import MainLogo from "./MainLogo.vue";
+import ProfileComponent from "./ProfileComponent.vue";
+
+export default defineComponent({
+    components: {
+        MainLogo,
+        ProfileComponent,
+    },
+
+    setup() {
+        const store = useStore();
+
+        const isLogged = computed(() => store.state.loggedIn);
+
+        return { isLogged }
+    }
+
+});
+</script>
 
 <style lang="scss">
 @import "../styles/main.scss";

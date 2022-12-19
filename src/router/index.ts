@@ -21,8 +21,8 @@ const routes: Array<RouteRecordRaw> = [
     component: LoginPage,
   },
   {
-    path: "/detailed",
-    name: "page",
+    path: "/detailed/book/:id",
+    name: "book detailed",
     component: BookDetailedPage,
   },
 //   {

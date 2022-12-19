@@ -11,6 +11,7 @@
                                     :size="'xl'"
                                     :imgUrl="'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg'"
                                 />
+                                {{$route.params.id}}
                             </div>
                         </div>
                         <div class="detailed__buttons">
@@ -31,15 +32,7 @@
                             <h1 class="book-info__title book-info__title--lg">
                                 Echo of the singing sands
                             </h1>
-                            <div class="book-info__footnotes">
-                                <div class="footnote">Анна Кроу</div>
-                                <div class="footnote footnote--addition">
-                                    Русское фэнтези
-                                </div>
-                                <div class="footnote footnote--addition">
-                                    Современная русская литература
-                                </div>
-                            </div>
+                            <book-footnotes />
                             <div class="book-info__description">
                                 Тамила Ассандер - последняя представительница
                                 правящей династии Гарета. Единственная, в чьей
@@ -629,12 +622,14 @@ import { defineComponent } from "@vue/composition-api";
 import TopBar from "../components/TopBar.vue";
 import BookImg from "../components/BookImg.vue";
 import ButtonLink from "../components/ButtonLink.vue";
+import BookFootnotes from "../components/BookFootnotes.vue";
 
 export default defineComponent({
     components: {
         TopBar,
         BookImg,
         ButtonLink,
+        BookFootnotes,
     },
 });
 </script>

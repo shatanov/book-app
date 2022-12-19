@@ -217,5 +217,28 @@
       "image": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
       "id": 2
     }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "BOOK",
+      "decsription": " Тамила Ассандер - последняя представительница правящей династии Гарета. Eдинственная, в чьей крови еще сохранилиськрохи древнего благославления Богини. Та, кто слышит голос песков. Та, что была жестоко предана. ",
+      "imgUrl": "https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg",
+      "rating": 4,
+      "footnotes": [
+        {
+          "name": "svds",
+          "status": true
+        },
+        {
+          "name": "svds",
+          "status": false
+        },
+        {
+          "name": "svds",
+          "status": false
+        }
+      ]
+    }
   ]
 }

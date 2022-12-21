@@ -8,5 +8,5 @@ export interface IBook {
     imgUrl: string
     rating: number
     footnotes: IFootnote[]
-    feedback?: IFeedback[]
+    feedback: IFeedback[]
 }

@@ -3,6 +3,7 @@ import router from "../router/index";
 
 import { IUser } from "../types/user.interface";
 import { IBookCategories } from "../types/bookCategories.interface";
+import { IBook } from "../types/book.interface";
 
 import { userService } from "../services/user.service";
 import { service } from "../services/service";
@@ -12,6 +13,7 @@ export default createStore({
     state: {
         loginFail: <boolean>false,
         allCategories: <IBookCategories>{},
+        currentBook: <IBook>{},
     },
 
     getters: {
@@ -26,6 +28,9 @@ export default createStore({
         },
         getAllCategoriesSuccess(state, allCategories: IBookCategories) {
             state.allCategories = allCategories;
+        },
+        getCurrentBookSuccess(state, book: IBook) {
+            state.currentBook = book;
         },
     },
 
@@ -52,6 +57,15 @@ export default createStore({
             service
                 .getAllCategories()
                 .then((data: any) => commit("getAllCategoriesSuccess", data));
+        },
+        getCurrentBook({ commit }, id: number) {
+            service.getBook(id).then((data: any) => {
+                if (data === undefined) {
+                    router.push("/");
+                    return;
+                }
+                commit("getCurrentBookSuccess", data);
+            });
         },
     },
 });

@@ -86,6 +86,7 @@ export default defineComponent({
             email: "",
             password: "",
             image: null,
+            status: "user",
         });
 
         const checkConfirmPassword = () => {

@@ -7,21 +7,17 @@
                     <div class="detailed__info">
                         <div class="detailed__img">
                             <div>
-                                <book-img
-                                    :size="'xl'"
-                                    :imgUrl="'https://s1.livelib.ru/boocover/1007553850/200x305/d73e/boocover.jpg'"
-                                />
-                                {{$route.params.id}}
+                                <book-img :size="'xl'" :imgUrl="book().imgUrl" />
                             </div>
                         </div>
                         <div class="detailed__buttons">
                             <button-link
-                                :hrefUrl="'/detailed'"
+                                :hrefUrl="'/'"
                                 :color="'primary'"
                                 >Write review</button-link
                             >
                             <button-link
-                                :hrefUrl="'/detailed'"
+                                :hrefUrl="'/'"
                                 :color="'contrast'"
                                 >Rate the book</button-link
                             >
@@ -29,32 +25,12 @@
                     </div>
                     <div class="detailed__info">
                         <div class="book-info">
-                            <h1 class="book-info__title book-info__title--lg">
-                                Echo of the singing sands
-                            </h1>
-                            <book-footnotes />
-                            <div class="book-info__description">
-                                Тамила Ассандер - последняя представительница
-                                правящей династии Гарета. Единственная, в чьей
-                                крови еще сохранились крохи древнего
-                                благославления Богини. Та, кто слышит голос
-                                песков. Та, что была жестоко предана.
-                            </div>
-                            <div class="book-info__description">
-                                От яда, с каждой секундой подбирающегося все
-                                ближе к сердцу, королеву не смогли спасти ни
-                                жрицы, ни маги. И пока Ее Величество медленно
-                                умирала, Совет прибирал власть к своим рукам.
-                                Оказавшись же на пороге войны с северянами -
-                                жестокими варварам, поклоняющимися богу войны
-                                Ратусу, Тамиле, поклявшейся защищать свой народ
-                                даже ценой собственной жизни и потерявшей веру в
-                                Совет, придется пойти на крайние меры и
-                                объединиться с человеком, о котором ей известно
-                                все и ничего - приближенным короля Ориса,
-                                державы, два года назад приславшей ей грамоту с
-                                ядом.
-                            </div>
+                            <h1
+                                class="book-info__title book-info__title--lg"
+                            >{{book().name}}</h1>
+                            <book-footnotes :footnotes="book().footnotes"/>
+                            <div class="book-info__description">{{book().decsription}}</div>
+                            <div class="book-info__description"></div>
                             <div class="book-info__reviews reviews">
                                 <h3 class="reviews__title">Reviews</h3>
                                 <div class="feedback">
@@ -604,10 +580,10 @@
                         </div>
                     </div>
                     <div class="detailed__buttons detailed__buttons--end">
-                        <button-link :hrefUrl="'/detailed'" :color="'primary'"
+                        <button-link :hrefUrl="'/'" :color="'primary'"
                             >Write review</button-link
                         >
-                        <button-link :hrefUrl="'/detailed'" :color="'contrast'"
+                        <button-link :hrefUrl="'/'" :color="'contrast'"
                             >Rate the book</button-link
                         >
                     </div>
@@ -617,12 +593,17 @@
     </main>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "@vue/composition-api";
+import { useRoute } from "vue-router";
+import { useStore } from "vuex";
+
 import TopBar from "../components/TopBar.vue";
 import BookImg from "../components/BookImg.vue";
 import ButtonLink from "../components/ButtonLink.vue";
 import BookFootnotes from "../components/BookFootnotes.vue";
+import { IBook } from "../types/book.interface";
+
 
 export default defineComponent({
     components: {
@@ -630,6 +611,19 @@ export default defineComponent({
         BookImg,
         ButtonLink,
         BookFootnotes,
+    },
+
+    setup() {
+        const route = useRoute();
+        const store = useStore();
+
+        const BOOK_ID = +route.params.id;
+
+        store.dispatch("getCurrentBook", BOOK_ID)
+
+        const book = ():IBook => store.state.currentBook;
+
+        return { book };
     },
 });
 </script>

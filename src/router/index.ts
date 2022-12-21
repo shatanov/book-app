@@ -25,7 +25,18 @@ const routes: Array<RouteRecordRaw> = [
         path: "/detailed/book/:id",
         name: "book detailed",
         component: BookDetailedPage,
-    }
+    },
+    {
+        path: "/detailed/book/:id",
+        name: "book detailed",
+        component: BookDetailedPage,
+    },
+    {
+        path: "/feedback/book/:id/:form",
+        name: "feedback",
+        component: FeedbackPage,
+        props: true,
+    },
 ];
 
 const router = createRouter({

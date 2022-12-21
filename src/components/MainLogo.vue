@@ -1,13 +1,13 @@
 <template>
-    <a
-        href="#"
+    <router-link
+        to="/"
         class="logo"
         :class="{
             'logo--small': size ? size === 'sm' : size,
             'logo--large': size ? size === 'lg' : size,
         }"
-        >Book<span class="logo__span">App</span></a
-    >
+        >Book<span class="logo__span">App</span>
+        </router-link>
 </template>
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";

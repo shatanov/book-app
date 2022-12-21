@@ -15,12 +15,24 @@
                         </div>
                         <div class="detailed__buttons">
                             <button-link
-                                :hrefUrl="'/'"
+                                :hrefUrl="{
+                                    name: 'feedback',
+                                    params: {
+                                        form: 'form',
+                                        id: `${book().id}`,
+                                    },
+                                }"
                                 :color="'primary'"
                                 >Write review</button-link
                             >
                             <button-link
-                                :hrefUrl="'/'"
+                                :hrefUrl="{
+                                    name: 'feedback',
+                                    params: {
+                                        form: 'rate',
+                                        id: `${book().id}`,
+                                    },
+                                }"
                                 :color="'contrast'"
                                 >Rate the book</button-link
                             >
@@ -60,12 +72,24 @@
                     </div>
                     <div class="detailed__buttons detailed__buttons--end">
                         <button-link
-                            :hrefUrl="'/'"
+                            :hrefUrl="{
+                                name: 'feedback',
+                                params: {
+                                    form: 'form',
+                                    id: `${book().id}`,
+                                },
+                            }"
                             :color="'primary'"
                             >Write review</button-link
                         >
                         <button-link
-                            :hrefUrl="'/'"
+                            :hrefUrl="{
+                                name: 'feedback',
+                                params: {
+                                    form: 'rate',
+                                    id: `${book().id}`,
+                                },
+                            }"
                             :color="'contrast'"
                             >Rate the book</button-link
                         >

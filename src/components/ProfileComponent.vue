@@ -5,7 +5,12 @@
                 :profile-img="user.image || ''"
                 :profile-name="user.fullName || ''"
             />
-            <div class="profile__info">{{ user.fullName || "" }}</div>
+            <div class="profile__info"
+            :class="{
+                'profile__info--sm': size === 'sm'
+            }"
+            >{{ user.fullName || "" }}</div>
+            
         </router-link>
     </div>
 </template>
@@ -20,6 +25,10 @@ export default defineComponent({
         user: {
             type: Object,
             required: true,
+        },
+        size: {
+            type: String,
+            required: false,
         }
     },
     components: {

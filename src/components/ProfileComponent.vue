@@ -5,16 +5,18 @@
                 :profile-img="user.image || ''"
                 :profile-name="user.fullName || ''"
             />
-            <div
-                class="profile__info"
-                :class="{
-                    'profile__info--sm': size === 'sm',
-                }"
-            >
-                {{ user.fullName || "" }}
-            </div>
-            <div class="profile__status" v-if="userStatus">
-                {{ user?.status }}
+            <div class="profile__wrapper">
+                <div
+                    class="profile__info"
+                    :class="{
+                        'profile__info--sm': size === 'sm',
+                    }"
+                >
+                    {{ user.fullName || "" }}
+                </div>
+                <div class="profile__status" v-if="userStatus">
+                    {{ user?.status }}
+                </div>
             </div>
         </router-link>
     </div>
@@ -74,6 +76,7 @@ export default defineComponent({
         font-size: var(----font-size-m);
         line-height: 27px;
         color: var(--dark-grey);
+        height: 100%;
         @include flex-position(center);
 
         &--sm {

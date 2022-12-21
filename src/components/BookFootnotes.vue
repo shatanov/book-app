@@ -11,7 +11,7 @@
             :key="footnote.name"
             :class="{
                 'footnote--addition': !footnote.status === true,
-                'footnote--addition_sm': size === 'sm',
+                'footnote--addition_sm': size === 'sm' && !footnote.status === true,
             }"
         >
             {{ footnote.name }}

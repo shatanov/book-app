@@ -14,10 +14,14 @@
                             </div>
                         </div>
                         <div class="detailed__buttons">
-                            <button-link :hrefUrl="'/'" :color="'primary'"
+                            <button-link
+                                :hrefUrl="'/'"
+                                :color="'primary'"
                                 >Write review</button-link
                             >
-                            <button-link :hrefUrl="'/'" :color="'contrast'"
+                            <button-link
+                                :hrefUrl="'/'"
+                                :color="'contrast'"
                                 >Rate the book</button-link
                             >
                         </div>
@@ -55,10 +59,14 @@
                         </div>
                     </div>
                     <div class="detailed__buttons detailed__buttons--end">
-                        <button-link :hrefUrl="'/'" :color="'primary'"
+                        <button-link
+                            :hrefUrl="'/'"
+                            :color="'primary'"
                             >Write review</button-link
                         >
-                        <button-link :hrefUrl="'/'" :color="'contrast'"
+                        <button-link
+                            :hrefUrl="'/'"
+                            :color="'contrast'"
                             >Rate the book</button-link
                         >
                     </div>
@@ -79,7 +87,6 @@ import ButtonLink from "../components/ButtonLink.vue";
 import BookFootnotes from "../components/BookFootnotes.vue";
 import BookReviews from "../components/BookReviews.vue";
 
-import { IFeedback } from "../types/feedback.interface";
 import { IBook } from "../types/book.interface";
 
 export default defineComponent({

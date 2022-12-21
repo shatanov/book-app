@@ -38,8 +38,9 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "../styles/main.scss";
+@import "../styles/blocks/rating";
 .score {
     display: flex;
     flex-direction: row-reverse;

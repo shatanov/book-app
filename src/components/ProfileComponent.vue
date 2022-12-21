@@ -5,12 +5,17 @@
                 :profile-img="user.image || ''"
                 :profile-name="user.fullName || ''"
             />
-            <div class="profile__info"
-            :class="{
-                'profile__info--sm': size === 'sm'
-            }"
-            >{{ user.fullName || "" }}</div>
-            
+            <div
+                class="profile__info"
+                :class="{
+                    'profile__info--sm': size === 'sm',
+                }"
+            >
+                {{ user.fullName || "" }}
+            </div>
+            <div class="profile__status" v-if="userStatus">
+                {{ user?.status }}
+            </div>
         </router-link>
     </div>
 </template>
@@ -29,7 +34,11 @@ export default defineComponent({
         size: {
             type: String,
             required: false,
-        }
+        },
+        userStatus: {
+            type: Boolean,
+            required: true,
+        },
     },
     components: {
         ProfileLogo,
@@ -37,7 +46,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "../styles/main.scss";
 .profile {
     &__link {

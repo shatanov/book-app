@@ -5,4 +5,5 @@ export interface IFeedback {
     }
     text?: string
     rating: number
+    date: string
 }

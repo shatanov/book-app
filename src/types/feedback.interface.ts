@@ -1,6 +1,6 @@
 export interface IFeedback {
     user: {
-        name: string
+        fullName: string
         status: string
     }
     text?: string

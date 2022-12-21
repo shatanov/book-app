@@ -7,30 +7,33 @@
                     <div class="detailed__info">
                         <div class="detailed__img">
                             <div>
-                                <book-img :size="'xl'" :imgUrl="book().imgUrl" />
+                                <book-img
+                                    :size="'xl'"
+                                    :imgUrl="book().imgUrl"
+                                />
                             </div>
                         </div>
                         <div class="detailed__buttons">
-                            <button-link
-                                :hrefUrl="'/'"
-                                :color="'primary'"
+                            <button-link :hrefUrl="'/'" :color="'primary'"
                                 >Write review</button-link
                             >
-                            <button-link
-                                :hrefUrl="'/'"
-                                :color="'contrast'"
+                            <button-link :hrefUrl="'/'" :color="'contrast'"
                                 >Rate the book</button-link
                             >
                         </div>
                     </div>
                     <div class="detailed__info">
                         <div class="book-info">
-                            <h1
-                                class="book-info__title book-info__title--lg"
-                            >{{book().name}}</h1>
-                            <book-footnotes :footnotes="book().footnotes"/>
-                            <div class="book-info__description">{{book().decsription}}</div>
-                            <div class="book-info__description"></div>
+                            <h1 class="book-info__title book-info__title--lg">
+                                {{ book().name }}
+                            </h1>
+                            <book-footnotes :footnotes="book().footnotes || []" />
+                            <div class="book-info__description">
+                                {{ book().decsription }}
+                            </div>
+                            <div class="book-info__description">
+                                {{ book()?.additional_description }}
+                            </div>
                             <div class="book-info__reviews reviews">
                                 <h3 class="reviews__title">Reviews</h3>
                                 <div class="feedback">
@@ -604,7 +607,6 @@ import ButtonLink from "../components/ButtonLink.vue";
 import BookFootnotes from "../components/BookFootnotes.vue";
 import { IBook } from "../types/book.interface";
 
-
 export default defineComponent({
     components: {
         TopBar,
@@ -619,9 +621,9 @@ export default defineComponent({
 
         const BOOK_ID = +route.params.id;
 
-        store.dispatch("getCurrentBook", BOOK_ID)
+        store.dispatch("getCurrentBook", BOOK_ID);
 
-        const book = ():IBook => store.state.currentBook;
+        const book = (): IBook => store.state.currentBook;
 
         return { book };
     },
@@ -630,7 +632,7 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import "../styles/main.scss";
-
+@import "../styles/blocks/book-info";
 .detailed {
     &__wrapper {
         display: flex;

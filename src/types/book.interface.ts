@@ -1,5 +1,5 @@
 import { IFootnote } from "./footnote.inteface"
-
+import { IFeedback } from "./feedback.interface"
 export interface IBook {
     id: number
     name: string
@@ -8,4 +8,5 @@ export interface IBook {
     imgUrl: string
     rating: number
     footnotes: IFootnote[]
+    feedback?: IFeedback[]
 }

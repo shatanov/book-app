@@ -4,7 +4,7 @@
             <book-img :imgUrl="book.imgUrl" :size="'lg'"/>
         </div>
         <div class="book__info">
-            <router-link :to="`/book/${book.id}`" class="book__name">{{book.name}}</router-link>
+            <router-link :to="`/detailed/book/${book.id}`" class="book__name">{{book.name}}</router-link>
             <div class="book__description">
                 {{book.decsription}}
             </div>

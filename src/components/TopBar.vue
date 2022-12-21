@@ -18,7 +18,7 @@
                     >
                 </div>
                 <div class="header__profile" v-if="user().email">
-                    <profile-component :user="user()"/>
+                    <profile-component :user="user()" :user-status="false"/>
                 </div>
             </div>
         </div>

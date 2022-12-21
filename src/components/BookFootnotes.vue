@@ -1,26 +1,40 @@
 <template>
-    <div class="book-info__footnotes">
-        <div class="footnote" v-for="footnote in footnotes" :key="footnote.name"
+    <div
+        class="book-info__footnotes"
         :class="{
-            'footnote--addition': !footnote.status === true,
+            'book-info__footnotes--sm': size === 'sm',
         }"
-        >{{footnote.name}}</div>
+    >
+        <div
+            class="footnote"
+            v-for="footnote in footnotes"
+            :key="footnote.name"
+            :class="{
+                'footnote--addition': !footnote.status === true,
+                'footnote--addition_sm': size === 'sm',
+            }"
+        >
+            {{ footnote.name }}
+        </div>
     </div>
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
     props: {
         footnotes: {
             type: Array,
-            required: true
-        }
-    }
-})
+            required: true,
+        },
+        size: {
+            type: String,
+            required: false,
+        },
+    },
+});
 </script>
-
 
 <style scoped lang="scss">
 @import "../styles/main.scss";

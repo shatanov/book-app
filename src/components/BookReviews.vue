@@ -17,7 +17,6 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { ref, toRefs } from "vue";
 
 import BookFedback from "./BookFeedback.vue";
 
